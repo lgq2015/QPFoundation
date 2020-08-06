@@ -62,10 +62,10 @@
 		1BF29CCA22BA2AD00046611D /* QPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF29CD722BA2B590046611D /* QPFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QPFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF29CE222BA2C230046611D /* QPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF9D8293A82AB5DD91902D70 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ./LICENSE; sourceTree = "<group>"; };
-		B1CE04F22E359F391F4A432A /* Cartfile.private */ = {isa = PBXFileReference; includeInIndex = 1; name = Cartfile.private; path = ./Cartfile.private; sourceTree = "<group>"; };
-		F2F20FEED780B2BD8CC84B66 /* QPFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = QPFoundation.podspec; path = ./QPFoundation.podspec; sourceTree = "<group>"; };
-		FC95AB7A3DC878EE3591DA9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ./README.md; sourceTree = "<group>"; };
+		AF9D8293A82AB5DD91902D70 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ./LICENSE; sourceTree = "<group>"; };
+		B1CE04F22E359F391F4A432A /* Cartfile.private */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Cartfile.private; path = ./Cartfile.private; sourceTree = "<group>"; };
+		F2F20FEED780B2BD8CC84B66 /* QPFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QPFoundation.podspec; path = ./QPFoundation.podspec; sourceTree = "<group>"; };
+		FC95AB7A3DC878EE3591DA9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ./README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,12 +390,13 @@
 					};
 				};
 			};
-			buildConfigurationList = 1B188A2222BA131700561366 /* Build configuration list for PBXProject "PROJECT" */;
+			buildConfigurationList = 1B188A2222BA131700561366 /* Build configuration list for PBXProject "QPFoundation" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 1B188A1E22BA131700561366;
 			productRefGroup = 1B188A2922BA131700561366 /* Products */;
@@ -590,7 +591,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -646,7 +647,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -950,7 +951,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B188A2222BA131700561366 /* Build configuration list for PBXProject "PROJECT" */ = {
+		1B188A2222BA131700561366 /* Build configuration list for PBXProject "QPFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B188A3A22BA131700561366 /* Debug */,

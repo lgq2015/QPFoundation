@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'QPFoundation'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of QPFoundation.'
+  s.summary          = 'Provides a general and convenient framework for building App, including UI, enhancement tool classes, network interface, debugging, etc.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Provides a general and convenient framework for building App, including UI,
+enhancement tool classes, network interface, debugging, etc.
                        DESC
 
   s.homepage         = 'https://github.com/keqiongpan/QPFoundation'
@@ -39,7 +40,7 @@ TODO: Add long description of the pod here.
   #   'QPFoundation' => ['QPFoundation/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'QPFoundation/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
