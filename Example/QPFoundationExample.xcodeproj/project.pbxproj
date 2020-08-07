@@ -185,8 +185,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "QPFoundationExample" */;
 			buildPhases = (
-				1B117AC124DCAC40004BCDFB /* Build and Execute QPGenerateNetworkingSources */,
 				27F3E2C4F8CA2E6272C41749 /* [CP] Check Pods Manifest.lock */,
+				1B117AC124DCAC40004BCDFB /* Build and Execute QPGenerateNetworkingSources */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
@@ -213,7 +213,6 @@
 				TargetAttributes = {
 					1BE9DEC924DC9D6000299A3D = {
 						CreatedOnToolsVersion = 11.6;
-						DevelopmentTeam = 2SVMNT2AXN;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -389,7 +388,6 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 2SVMNT2AXN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
@@ -415,7 +413,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 2SVMNT2AXN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
