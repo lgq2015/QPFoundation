@@ -8,7 +8,7 @@
 
 #import <QPFoundation/QPPublicHeader.h>
 #import <QPFoundation/QPNetworkingDefinition.h>
-#import <QPFoundation/QPNetworkingProtocal.h>
+#import <QPFoundation/QPNetworkingProtocol.h>
 #import <QPFoundation/QPNetworkingOperation.h>
 
 
@@ -41,21 +41,21 @@
  */
 FOUNDATION_EXPORT
 NSMutableDictionary *
-QPNetworkingGetRegisteredProtocals(void);
+QPNetworkingGetRegisteredProtocols(void);
 
 /**
  *  获取已注册的网络协议。
  */
 FOUNDATION_EXPORT
-QPNetworkingProtocal *
-QPNetworkingGetRegisteredProtocal(NSString *name);
+QPNetworkingProtocol *
+QPNetworkingGetRegisteredProtocol(NSString *name);
 
 /**
  *  面向框架注册网络协议。
  */
 FOUNDATION_EXPORT
 void
-QPNetworkingRegisterProtocal(QPNetworkingProtocal *protocal);
+QPNetworkingRegisterProtocol(QPNetworkingProtocol *protocol);
 
 
 #pragma mark - 网络请求操作列队。
@@ -72,7 +72,7 @@ QPNetworkingGetOperationQueue(void);
  */
 FOUNDATION_EXPORT
 QPNetworkingOperation *
-QPNetworkingCommitOperation(NSString *protocalName,
+QPNetworkingCommitOperation(NSString *protocolName,
                             NSString *interfaceAlias,
                             void (^initial)(QPNetworkingOperation *operation),
                             void (^success)(QPNetworkingOperation *operation),

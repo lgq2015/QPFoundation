@@ -9,7 +9,7 @@
 #import <QPFoundation/QPPublicHeader.h>
 
 
-@class QPNetworkingProtocal;
+@class QPNetworkingProtocol;
 
 
 /**
@@ -66,7 +66,7 @@ FOUNDATION_EXPORT __unsafe_unretained QPNetworkingNodeModel *QPNetworkingCurrent
 /**
  *  协议定义异常。
  */
-QP_EXPORT_KEYNAME(QPNetworkingProtocalException);
+QP_EXPORT_KEYNAME(QPNetworkingProtocolException);
 
 
 #pragma mark - 协议上下文。
@@ -77,28 +77,28 @@ QP_EXPORT_KEYNAME(QPNetworkingProtocalException);
  */
 FOUNDATION_EXPORT
 NSMutableArray *
-QPNetworkingGetProtocalContextStack(void);
+QPNetworkingGetProtocolContextStack(void);
 
 /**
  *  获取当前位于栈顶的协议上下文。一般仅在框架内部使用。
  */
 FOUNDATION_EXPORT
-QPNetworkingProtocal *
-QPNetworkingGetCurrentProtocalContext(void);
+QPNetworkingProtocol *
+QPNetworkingGetCurrentProtocolContext(void);
 
 /**
  *  将协议上下文压入堆栈的栈顶。一般仅在框架内部使用。
  */
 FOUNDATION_EXPORT
 void
-QPNetworkingPushProtocalContext(QPNetworkingProtocal *context);
+QPNetworkingPushProtocolContext(QPNetworkingProtocol *context);
 
 /**
  *  将当前位于栈顶的协议上下文弹出堆栈。一般仅在框架内部使用。
  */
 FOUNDATION_EXPORT
 void
-QPNetworkingPopProtocalContext(void);
+QPNetworkingPopProtocolContext(void);
 
 
 #pragma mark - 协议创建函数。

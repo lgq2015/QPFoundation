@@ -12,42 +12,42 @@
 #pragma mark - 网络协议注册列表。
 
 NSMutableDictionary *
-QPNetworkingGetRegisteredProtocals()
+QPNetworkingGetRegisteredProtocols()
 {
-    static NSMutableDictionary *protocals;
+    static NSMutableDictionary *protocols;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        protocals = [[NSMutableDictionary alloc] init];
+        protocols = [[NSMutableDictionary alloc] init];
     });
-    return protocals;
+    return protocols;
 }
 
-QPNetworkingProtocal *
-QPNetworkingGetRegisteredProtocal(NSString *name)
+QPNetworkingProtocol *
+QPNetworkingGetRegisteredProtocol(NSString *name)
 {
-    return [QPNetworkingGetRegisteredProtocals() objectForKey:name];
+    return [QPNetworkingGetRegisteredProtocols() objectForKey:name];
 }
 
 void
-QPNetworkingRegisterProtocal(QPNetworkingProtocal *protocal)
+QPNetworkingRegisterProtocol(QPNetworkingProtocol *protocol)
 {
-    if ([protocal.name length] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
-         @"[QPFoundation] The protocal(class:%@)'s name can't be empty.",
-         [protocal class]];
+    if ([protocol.name length] <= 0) {
+        [NSException raise:QPNetworkingProtocolException format:
+         @"[QPFoundation] The protocol(class:%@)'s name can't be empty.",
+         [protocol class]];
     }
 
-    NSMutableDictionary *protocals = QPNetworkingGetRegisteredProtocals();
-    id registeredProtocal = [protocals objectForKey:protocal.name];
+    NSMutableDictionary *protocols = QPNetworkingGetRegisteredProtocols();
+    id registeredProtocol = [protocols objectForKey:protocol.name];
 
-    if (registeredProtocal && registeredProtocal != protocal) {
-        [NSException raise:QPNetworkingProtocalException format:
-         @"[QPFoundation] The protocal(class:%@)'s name [%@] is already "
-         @"register by the protocal(class:%@).",
-         [protocal class], [protocal name], [registeredProtocal class]];
+    if (registeredProtocol && registeredProtocol != protocol) {
+        [NSException raise:QPNetworkingProtocolException format:
+         @"[QPFoundation] The protocol(class:%@)'s name [%@] is already "
+         @"register by the protocol(class:%@).",
+         [protocol class], [protocol name], [registeredProtocol class]];
     }
 
-    [protocals setValue:protocal forKey:protocal.name];
+    [protocols setValue:protocol forKey:protocol.name];
 }
 
 
@@ -65,7 +65,7 @@ QPNetworkingGetOperationQueue()
 }
 
 QPNetworkingOperation *
-QPNetworkingCommitOperation(NSString *protocalName,
+QPNetworkingCommitOperation(NSString *protocolName,
                             NSString *interfaceAlias,
                             void (^initial)(QPNetworkingOperation *operation),
                             void (^success)(QPNetworkingOperation *operation),
@@ -73,36 +73,36 @@ QPNetworkingCommitOperation(NSString *protocalName,
 {
     // 根据协议名称获取已注册的网络协议对象。
 
-    QPNetworkingProtocal *protocal = QPNetworkingGetRegisteredProtocal(protocalName);
-    if (!protocal) {
+    QPNetworkingProtocol *protocol = QPNetworkingGetRegisteredProtocol(protocolName);
+    if (!protocol) {
         [NSException raise:QPNetworkingOperationException format:
-         @"[QPFoundation] The protocal [%@] is not registered.",
-         protocalName];
+         @"[QPFoundation] The protocol [%@] is not registered.",
+         protocolName];
     }
 
     // 根据接口别名获取协议对象中的接口定义信息。
 
-    QPNetworkingInterfaceModel *interface = [protocal interfaceWithAlias:interfaceAlias];
+    QPNetworkingInterfaceModel *interface = [protocol interfaceWithAlias:interfaceAlias];
     if (!interface) {
         [NSException raise:QPNetworkingOperationException format:
          @"[QPFoundation] The interface(alias:%@) is not a member of "
-         @"the protocal [%@].",
-         interfaceAlias, protocalName];
+         @"the protocol [%@].",
+         interfaceAlias, protocolName];
     }
 
     // 生成网络请求操作对象。
 
-    Class operationClass = NSClassFromString(protocal.operationClassName);
+    Class operationClass = NSClassFromString(protocol.operationClassName);
     QPNetworkingOperation *operation = [[operationClass alloc] init];
     if (!operation) {
         [NSException raise:QPNetworkingOperationException format:
          @"[QPFoundation] Create operation instance with class [%@] fail.",
-         protocal.operationClassName];
+         protocol.operationClassName];
     }
 
     // 生成请求报文节点对象。
 
-    NSString *className = [protocal classNameForRequestOfInterface:interface];
+    NSString *className = [protocol classNameForRequestOfInterface:interface];
     Class requestClass = NSClassFromString(className);
     id requestObject = [[requestClass alloc] init];
     if (!requestObject) {
@@ -113,7 +113,7 @@ QPNetworkingCommitOperation(NSString *protocalName,
 
     // 初始化网络请求操作对象。
 
-    operation.protocal = protocal;
+    operation.protocol = protocol;
     operation.interface = interface;
 
     operation.initial = initial;

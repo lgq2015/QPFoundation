@@ -1,5 +1,5 @@
 //
-//  QPNetworkingProtocal.m
+//  QPNetworkingProtocol.m
 //  QPFoundation
 //
 //  Created by keqiongpan@163.com on 15/12/28.
@@ -54,7 +54,7 @@ QP_DEFINE_STRING(QPNetworkingFieldPropertyComments, @"comments");   // 属性注
 QP_STATIC_KEYNAME(QPNetworkingConversionException);
 
 
-@interface QPNetworkingProtocal ()
+@interface QPNetworkingProtocol ()
 
 /**
  *  协议名称，用于向框架注册时标识该协议，并且也是默认的根命名空间，用于协议产生
@@ -98,7 +98,7 @@ QP_STATIC_KEYNAME(QPNetworkingConversionException);
 @end
 
 
-@implementation QPNetworkingProtocal
+@implementation QPNetworkingProtocol
 
 #pragma mark - 初始化及销毁。
 
@@ -110,8 +110,8 @@ QP_STATIC_KEYNAME(QPNetworkingConversionException);
         // 校验协议参数是否合法。
 
         if ([name length] <= 0) {
-            [NSException raise:QPNetworkingProtocalException format:
-             @"[QPFoundation] The protocal(class:%@)'s name can't be empty.",
+            [NSException raise:QPNetworkingProtocolException format:
+             @"[QPFoundation] The protocol(class:%@)'s name can't be empty.",
              [self class]];
         }
 
@@ -149,8 +149,8 @@ QP_STATIC_KEYNAME(QPNetworkingConversionException);
 {
     Class operationClass = NSClassFromString(operationClassName);
     if (operationClass && ![operationClass isSubclassOfClass:[QPNetworkingOperation class]]) {
-        [NSException raise:QPNetworkingProtocalException format:
-         @"[QPFoundation] The protocal [%@]'s networking-operation-class "
+        [NSException raise:QPNetworkingProtocolException format:
+         @"[QPFoundation] The protocol [%@]'s networking-operation-class "
          @"must be subclass of `%@'.",
          self.name, [QPNetworkingOperation class]];
     }
@@ -161,15 +161,15 @@ QP_STATIC_KEYNAME(QPNetworkingConversionException);
 
 - (void)refresh
 {
-    @synchronized(QPNetworkingGetProtocalContextStack()) {
-        QPNetworkingPushProtocalContext(self);
+    @synchronized(QPNetworkingGetProtocolContextStack()) {
+        QPNetworkingPushProtocolContext(self);
         [self.interfaces removeAllObjects];
         [self.nodes removeAllObjects];
         [self.invokes removeAllObjects];
         [self.classes removeAllObjects];
         [self.files removeAllObjects];
         [self initializeInterfaces];
-        QPNetworkingPopProtocalContext();
+        QPNetworkingPopProtocolContext();
     }
 }
 
@@ -179,7 +179,7 @@ QP_STATIC_KEYNAME(QPNetworkingConversionException);
     NSString *alias = [interface objectForKey:QPNetworkingInterfaceAlias];
 
     if ([alias length] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The interface [%@]'s alias can't be empty.",
          name];
     }
@@ -188,7 +188,7 @@ QP_STATIC_KEYNAME(QPNetworkingConversionException);
     addedInterface = [self.interfaces objectForKey:alias];
 
     if (addedInterface) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The interface [%@]'s alias [%@] is already "
          @"register by the interface [%@].",
          name, alias, [addedInterface objectForKey:QPNetworkingInterfaceName]];
@@ -204,7 +204,7 @@ QP_STATIC_KEYNAME(QPNetworkingConversionException);
     BOOL isIndependent = [[node objectForKey:QPNetworkingNodeIndependent] boolValue];
 
     if ([alias length] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The node [%@]'s alias can't be empty.",
          name];
     }
@@ -212,16 +212,16 @@ QP_STATIC_KEYNAME(QPNetworkingConversionException);
     QPNetworkingNodeModel *addedNode = [self.nodes objectForKey:alias];
 
     if (addedNode) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The node [%@]'s alias [%@] is already "
          @"register by the node [%@].",
          name, alias, [addedNode objectForKey:QPNetworkingNodeName]];
     }
 
     if (!isIndependent) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The node [%@] is a temporary-node, "
-         @"only independent-node can be immediate member of protocal.",
+         @"only independent-node can be immediate member of protocol.",
          name];
     }
 
@@ -801,7 +801,7 @@ QP_STATIC_KEYNAME(QPNetworkingConversionException);
 {
     [self.files removeAllObjects];
 
-    NSString *protocalClassName = NSStringFromClass([self class]);
+    NSString *protocolClassName = NSStringFromClass([self class]);
 
     // 将所有接口定义数据按编码、别名从小到大排序。
 
@@ -918,7 +918,7 @@ QP_STATIC_KEYNAME(QPNetworkingConversionException);
     // 生成接口协议汇总信息列表文档。
 
     NSString *listFileName = [NSString stringWithFormat:@"%@Summary.html",
-                              protocalClassName];
+                              protocolClassName];
     [self linkOrderedInterfaces:orderedInterfaces
                 toListFileNamed:listFileName];
 
@@ -934,14 +934,14 @@ QP_STATIC_KEYNAME(QPNetworkingConversionException);
     // 生成节点模型类头文件。
 
     NSString *classesHeaderFileName = [NSString stringWithFormat:@"%@Classes.h",
-                                       protocalClassName];
+                                       protocolClassName];
     [self linkOrderedClasses:orderedClasses
            toHeaderFileNamed:classesHeaderFileName];
 
     // 生成节点模型类源文件。
 
     NSString *classesSourceFileName = [NSString stringWithFormat:@"%@Classes.m",
-                                       protocalClassName];
+                                       protocolClassName];
     [self linkOrderedClasses:orderedClasses
            toSourceFileNamed:classesSourceFileName
          withHeaderFileNamed:classesHeaderFileName];
@@ -958,7 +958,7 @@ QP_STATIC_KEYNAME(QPNetworkingConversionException);
     // 生成接口调用函数头文件。
 
     NSString *invokesHeaderFileName = [NSString stringWithFormat:@"%@Invokes.h",
-                                       protocalClassName];
+                                       protocolClassName];
     [self linkOrderedInvokes:orderedInvokes
            toHeaderFileNamed:invokesHeaderFileName
   withClassesHeaderFileNamed:classesHeaderFileName];
@@ -966,7 +966,7 @@ QP_STATIC_KEYNAME(QPNetworkingConversionException);
     // 生成接口调用函数源文件。
 
     NSString *invokesSourceFileName = [NSString stringWithFormat:@"%@Invokes.m",
-                                       protocalClassName];
+                                       protocolClassName];
     [self linkOrderedInvokes:orderedInvokes
            toSourceFileNamed:invokesSourceFileName
          withHeaderFileNamed:invokesHeaderFileName];

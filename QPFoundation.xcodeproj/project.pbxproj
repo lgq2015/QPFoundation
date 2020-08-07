@@ -13,11 +13,11 @@
 		1B188A3922BA131700561366 /* QPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B188A2B22BA131700561366 /* QPFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B969C3724DC77CC002AAD7A /* QPNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BCA24DC77CC002AAD7A /* QPNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B969C3824DC77CC002AAD7A /* QPNetworkingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCB24DC77CC002AAD7A /* QPNetworkingOperation.m */; };
-		1B969C3924DC77CC002AAD7A /* QPNetworkingProtocal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCC24DC77CC002AAD7A /* QPNetworkingProtocal.m */; };
+		1B969C3924DC77CC002AAD7A /* QPNetworkingProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCC24DC77CC002AAD7A /* QPNetworkingProtocol.m */; };
 		1B969C3A24DC77CC002AAD7A /* QPNetworkingDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCD24DC77CC002AAD7A /* QPNetworkingDefinition.m */; };
 		1B969C3B24DC77CC002AAD7A /* QPNetworkingOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BCE24DC77CC002AAD7A /* QPNetworkingOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B969C3C24DC77CC002AAD7A /* QPNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCF24DC77CC002AAD7A /* QPNetworking.m */; };
-		1B969C3D24DC77CC002AAD7A /* QPNetworkingProtocal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD024DC77CC002AAD7A /* QPNetworkingProtocal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B969C3D24DC77CC002AAD7A /* QPNetworkingProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD024DC77CC002AAD7A /* QPNetworkingProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B969C3E24DC77CC002AAD7A /* QPNetworkingDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD124DC77CC002AAD7A /* QPNetworkingDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B969C3F24DC77CC002AAD7A /* QPFullScreenNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BD324DC77CC002AAD7A /* QPFullScreenNavigationController.m */; };
 		1B969C4024DC77CC002AAD7A /* QPTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD424DC77CC002AAD7A /* QPTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -117,12 +117,12 @@
 		1B969C9E24DC77CD002AAD7A /* UIView+Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C3624DC77CC002AAD7A /* UIView+Tree.m */; };
 		1B969C9F24DC7C26002AAD7A /* QPNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BCA24DC77CC002AAD7A /* QPNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B969CA024DC7C29002AAD7A /* QPNetworkingDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD124DC77CC002AAD7A /* QPNetworkingDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B969CA124DC7C2C002AAD7A /* QPNetworkingProtocal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD024DC77CC002AAD7A /* QPNetworkingProtocal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B969CA124DC7C2C002AAD7A /* QPNetworkingProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD024DC77CC002AAD7A /* QPNetworkingProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B969CA224DC7C2E002AAD7A /* QPNetworkingOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BCE24DC77CC002AAD7A /* QPNetworkingOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B969CA324DC7C39002AAD7A /* QPPublicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C2B24DC77CC002AAD7A /* QPPublicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B969CA424DC7C5B002AAD7A /* QPNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCF24DC77CC002AAD7A /* QPNetworking.m */; };
 		1B969CA524DC7C5F002AAD7A /* QPNetworkingDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCD24DC77CC002AAD7A /* QPNetworkingDefinition.m */; };
-		1B969CA624DC7C61002AAD7A /* QPNetworkingProtocal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCC24DC77CC002AAD7A /* QPNetworkingProtocal.m */; };
+		1B969CA624DC7C61002AAD7A /* QPNetworkingProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCC24DC77CC002AAD7A /* QPNetworkingProtocol.m */; };
 		1B969CA724DC7C64002AAD7A /* QPNetworkingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCB24DC77CC002AAD7A /* QPNetworkingOperation.m */; };
 		1BBD3A3522BB369500CD7BCD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBD3A3422BB369500CD7BCD /* XCTest.framework */; };
 		1BBD3A3722BB369D00CD7BCD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBD3A3622BB369D00CD7BCD /* XCTest.framework */; };
@@ -158,11 +158,11 @@
 		1B188A3822BA131700561366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B969BCA24DC77CC002AAD7A /* QPNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNetworking.h; sourceTree = "<group>"; };
 		1B969BCB24DC77CC002AAD7A /* QPNetworkingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPNetworkingOperation.m; sourceTree = "<group>"; };
-		1B969BCC24DC77CC002AAD7A /* QPNetworkingProtocal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPNetworkingProtocal.m; sourceTree = "<group>"; };
+		1B969BCC24DC77CC002AAD7A /* QPNetworkingProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPNetworkingProtocol.m; sourceTree = "<group>"; };
 		1B969BCD24DC77CC002AAD7A /* QPNetworkingDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPNetworkingDefinition.m; sourceTree = "<group>"; };
 		1B969BCE24DC77CC002AAD7A /* QPNetworkingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNetworkingOperation.h; sourceTree = "<group>"; };
 		1B969BCF24DC77CC002AAD7A /* QPNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPNetworking.m; sourceTree = "<group>"; };
-		1B969BD024DC77CC002AAD7A /* QPNetworkingProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNetworkingProtocal.h; sourceTree = "<group>"; };
+		1B969BD024DC77CC002AAD7A /* QPNetworkingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNetworkingProtocol.h; sourceTree = "<group>"; };
 		1B969BD124DC77CC002AAD7A /* QPNetworkingDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNetworkingDefinition.h; sourceTree = "<group>"; };
 		1B969BD324DC77CC002AAD7A /* QPFullScreenNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPFullScreenNavigationController.m; sourceTree = "<group>"; };
 		1B969BD424DC77CC002AAD7A /* QPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPTabBarController.h; sourceTree = "<group>"; };
@@ -380,8 +380,8 @@
 				1B969BCF24DC77CC002AAD7A /* QPNetworking.m */,
 				1B969BD124DC77CC002AAD7A /* QPNetworkingDefinition.h */,
 				1B969BCD24DC77CC002AAD7A /* QPNetworkingDefinition.m */,
-				1B969BD024DC77CC002AAD7A /* QPNetworkingProtocal.h */,
-				1B969BCC24DC77CC002AAD7A /* QPNetworkingProtocal.m */,
+				1B969BD024DC77CC002AAD7A /* QPNetworkingProtocol.h */,
+				1B969BCC24DC77CC002AAD7A /* QPNetworkingProtocol.m */,
 				1B969BCE24DC77CC002AAD7A /* QPNetworkingOperation.h */,
 				1B969BCB24DC77CC002AAD7A /* QPNetworkingOperation.m */,
 			);
@@ -573,7 +573,7 @@
 				1B969C5024DC77CC002AAD7A /* QPFullScreenNavigationController.h in Headers */,
 				1B969C5524DC77CC002AAD7A /* QPApplicationFramework.h in Headers */,
 				1B969C8A24DC77CD002AAD7A /* UIBarButtonItem+Factory.h in Headers */,
-				1B969C3D24DC77CC002AAD7A /* QPNetworkingProtocal.h in Headers */,
+				1B969C3D24DC77CC002AAD7A /* QPNetworkingProtocol.h in Headers */,
 				1B969C5824DC77CC002AAD7A /* UIResponder+ApplicationFramework.h in Headers */,
 				1B969C6624DC77CD002AAD7A /* QPSetNeedsWithBlock.h in Headers */,
 				1B969C9224DC77CD002AAD7A /* UIViewController+SegueBlockPerformer.h in Headers */,
@@ -612,7 +612,7 @@
 				1B969CA224DC7C2E002AAD7A /* QPNetworkingOperation.h in Headers */,
 				1B969CA324DC7C39002AAD7A /* QPPublicHeader.h in Headers */,
 				1BF29CAB22BA24940046611D /* QPFoundation.h in Headers */,
-				1B969CA124DC7C2C002AAD7A /* QPNetworkingProtocal.h in Headers */,
+				1B969CA124DC7C2C002AAD7A /* QPNetworkingProtocol.h in Headers */,
 				1B969C9F24DC7C26002AAD7A /* QPNetworking.h in Headers */,
 				1B969CA024DC7C29002AAD7A /* QPNetworkingDefinition.h in Headers */,
 			);
@@ -803,7 +803,7 @@
 				1B969C5A24DC77CC002AAD7A /* QPBaseViewController.m in Sources */,
 				1B969C4B24DC77CC002AAD7A /* QPTabBar.m in Sources */,
 				1B969C4824DC77CC002AAD7A /* QPApplicationFramework.m in Sources */,
-				1B969C3924DC77CC002AAD7A /* QPNetworkingProtocal.m in Sources */,
+				1B969C3924DC77CC002AAD7A /* QPNetworkingProtocol.m in Sources */,
 				1B969C8B24DC77CD002AAD7A /* QPKeyboardManager.m in Sources */,
 				1B969C5D24DC77CC002AAD7A /* QPObjectPropertyListSerialization.m in Sources */,
 				1B969C4924DC77CC002AAD7A /* QPPanelController.m in Sources */,
@@ -834,7 +834,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B969CA724DC7C64002AAD7A /* QPNetworkingOperation.m in Sources */,
-				1B969CA624DC7C61002AAD7A /* QPNetworkingProtocal.m in Sources */,
+				1B969CA624DC7C61002AAD7A /* QPNetworkingProtocol.m in Sources */,
 				1B969CA424DC7C5B002AAD7A /* QPNetworking.m in Sources */,
 				1B969CA524DC7C5F002AAD7A /* QPNetworkingDefinition.m in Sources */,
 			);

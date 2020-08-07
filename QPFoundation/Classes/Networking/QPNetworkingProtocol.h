@@ -1,5 +1,5 @@
 //
-//  QPNetworkingProtocal.h
+//  QPNetworkingProtocol.h
 //  QPFoundation
 //
 //  Created by keqiongpan@163.com on 15/12/28.
@@ -52,7 +52,7 @@ QP_EXPORT_STRING(QPNetworkingFieldPropertyComments);                    // 属�
 /**
  *  网络协议抽象基类，子类应该重写initializeInterfaces方法定义协议涉及的接口。
  */
-@interface QPNetworkingProtocal : NSObject
+@interface QPNetworkingProtocol : NSObject
 
 /**
  *  协议名称，用于向框架注册时标识该协议，并且也是默认的根命名空间，用于协议产生

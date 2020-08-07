@@ -194,7 +194,7 @@ QP_STATIC_STRING(NSOperationIsFinished, @"isFinished");
 - (void)handleRequestObjectCallback
 {
     if (self.requestObject) {
-        self.requestObject = [self.protocal
+        self.requestObject = [self.protocol
                               callbackForRequest:self.requestObject
                               atInterface:self.interface
                               withSender:self];
@@ -204,7 +204,7 @@ QP_STATIC_STRING(NSOperationIsFinished, @"isFinished");
 - (void)handleRequestObjectToDictionary
 {
     if (self.requestObject) {
-        self.requestDictionary = [self.protocal
+        self.requestDictionary = [self.protocol
                                   dictionaryForRequest:self.requestObject
                                   atInterface:self.interface];
     }
@@ -229,7 +229,7 @@ QP_STATIC_STRING(NSOperationIsFinished, @"isFinished");
 - (void)handleResponseDictionaryToObject
 {
     if (self.responseDictionary) {
-        self.responseObject = [self.protocal
+        self.responseObject = [self.protocol
                                responseForDictionary:self.responseDictionary
                                atInterface:self.interface
                                compatibleConstraint:NO];
@@ -239,7 +239,7 @@ QP_STATIC_STRING(NSOperationIsFinished, @"isFinished");
 - (void)handleResponseObjectCallback
 {
     if (self.responseObject) {
-        self.responseObject = [self.protocal
+        self.responseObject = [self.protocol
                                callbackForResponse:self.responseObject
                                atInterface:self.interface
                                withSender:self];

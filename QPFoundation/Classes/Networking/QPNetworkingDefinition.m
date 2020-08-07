@@ -57,13 +57,13 @@ __unsafe_unretained QPNetworkingNodeModel *QPNetworkingCurrentNode = nil;
 /**
  *  协议定义异常。
  */
-QP_DEFINE_KEYNAME(QPNetworkingProtocalException);
+QP_DEFINE_KEYNAME(QPNetworkingProtocolException);
 
 
 /**
  *  协议对象中用于协议定义相关的私有方法。
  */
-@interface QPNetworkingProtocal (Definition)
+@interface QPNetworkingProtocol (Definition)
 
 - (void)addInterface:(QPNetworkingInterfaceModel *)interface;
 - (void)addNode:(QPNetworkingNodeModel *)node;
@@ -73,7 +73,7 @@ QP_DEFINE_KEYNAME(QPNetworkingProtocalException);
 
 #pragma mark - 接口协议上下文。
 
-NSMutableArray *QPNetworkingGetProtocalContextStack()
+NSMutableArray *QPNetworkingGetProtocolContextStack()
 {
     static NSMutableArray *stack;
     static dispatch_once_t onceToken;
@@ -83,21 +83,21 @@ NSMutableArray *QPNetworkingGetProtocalContextStack()
     return stack;
 }
 
-QPNetworkingProtocal *QPNetworkingGetCurrentProtocalContext()
+QPNetworkingProtocol *QPNetworkingGetCurrentProtocolContext()
 {
-    NSMutableArray *stack = QPNetworkingGetProtocalContextStack();
+    NSMutableArray *stack = QPNetworkingGetProtocolContextStack();
     return ([stack count] > 0) ? [stack lastObject] : nil;
 }
 
-void QPNetworkingPushProtocalContext(QPNetworkingProtocal *context)
+void QPNetworkingPushProtocolContext(QPNetworkingProtocol *context)
 {
-    NSMutableArray *stack = QPNetworkingGetProtocalContextStack();
+    NSMutableArray *stack = QPNetworkingGetProtocolContextStack();
     [stack addObject:context];
 }
 
-void QPNetworkingPopProtocalContext()
+void QPNetworkingPopProtocolContext()
 {
-    NSMutableArray *stack = QPNetworkingGetProtocalContextStack();
+    NSMutableArray *stack = QPNetworkingGetProtocolContextStack();
     if ([stack count] > 0) {
         [stack removeLastObject];
     }
@@ -120,27 +120,27 @@ QPNetworkingCreateInterface(NSString *name,
     // 校验当前接口的定义参数是否合法。
 
     if ([name length] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The interface(alias:%@)'s name can't be empty.", alias];
     }
 
     if ([alias length] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The interface [%@]'s alias can't be empty.", name];
     }
 
     if (!request) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The interface [%@]'s request node can't be nil.", name];
     }
 
     if (!response) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The interface [%@]'s response node can't be nil.", name];
     }
 
     if ([description length] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The interface [%@]'s description can't be empty.", name];
     }
 
@@ -170,14 +170,14 @@ QPNetworkingCreateInterface(NSString *name,
 
     // 将生成的接口定义信息添加到协议上下文中。
 
-    QPNetworkingProtocal *context = QPNetworkingGetCurrentProtocalContext();
+    QPNetworkingProtocol *context = QPNetworkingGetCurrentProtocolContext();
 
     if ([context respondsToSelector:@selector(addInterface:)]) {
         [context addInterface:interface];
     }
     else {
-        [NSException raise:QPNetworkingProtocalException format:
-         @"[QPFoundation] The protocal [%@] don't have `-addInterface:' method.",
+        [NSException raise:QPNetworkingProtocolException format:
+         @"[QPFoundation] The protocol [%@] don't have `-addInterface:' method.",
          [context name]];
     }
 
@@ -193,17 +193,17 @@ QPNetworkingCreateIndependentNode(NSString *name,
     // 校验当前节点的定义参数是否合法。
 
     if ([name length] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The independent-node(alias:%@)'s name can't be empty.", alias];
     }
 
     if ([alias length] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The independent-node [%@]'s alias can't be empty.", name];
     }
 
     if ([description length] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The independent-node [%@]'s description can't be empty.", name];
     }
 
@@ -220,14 +220,14 @@ QPNetworkingCreateIndependentNode(NSString *name,
 
     // 将生成的节点定义信息添加到协议上下文中。
 
-    QPNetworkingProtocal *context = QPNetworkingGetCurrentProtocalContext();
+    QPNetworkingProtocol *context = QPNetworkingGetCurrentProtocolContext();
 
     if ([context respondsToSelector:@selector(addNode:)]) {
         [context addNode:node];
     }
     else {
-        [NSException raise:QPNetworkingProtocalException format:
-         @"[QPFoundation] The protocal [%@] don't have `-addNode:' method.",
+        [NSException raise:QPNetworkingProtocolException format:
+         @"[QPFoundation] The protocol [%@] don't have `-addNode:' method.",
          [context name]];
     }
 
@@ -240,7 +240,7 @@ QPNetworkingCreateTemporaryNode(NSString *name)
     // 校验当前节点的定义参数是否合法。
 
     if ([name length] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The temporary-node's name can't be empty."];
     }
 
@@ -266,39 +266,39 @@ QPNetworkingCreateField(QPNetworkingFieldModel *parentField,
     // 校验当前字段的定义参数是否合法。
 
     if (!parentField) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The field [%@]'s parent field can't be nil.", name];
     }
 
     if ([name length] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The field(alias:%@)'s name can't be empty.", alias];
     }
 
     if ([alias length] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The field [%@]'s alias can't be empty.", name];
     }
 
     if ([constraint length] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The field [%@]'s constraint can't be empty.", name];
     }
 
     if ([description length] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The field [%@]'s description can't be empty.", name];
     }
 
     if ([(@[@"?", @"+", @"*", @"1"]) containsObject:constraint] <= 0) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The field [%@]'s constraint only support:[?+*1].", name];
     }
 
     // 如果父节点是外部引用节点，则不允许再向其添加子节点。
 
     if ([parentField objectForKey:QPNetworkingFieldOuterNode]) {
-        [NSException raise:QPNetworkingProtocalException format:
+        [NSException raise:QPNetworkingProtocolException format:
          @"[QPFoundation] The field [%@]'s parent field [%@] is an outer-node, "
          @"can't append childs.",
          name, [parentField objectForKey:QPNetworkingFieldName]];

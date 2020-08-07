@@ -9,7 +9,7 @@
 #import <QPFoundation/QPPublicHeader.h>
 
 
-@class QPNetworkingProtocal;
+@class QPNetworkingProtocol;
 
 
 /**
@@ -43,7 +43,7 @@ QP_EXPORT_KEYNAME(QPNetworkingOperationErrorDomain);
  */
 @interface QPNetworkingOperation : NSOperation
 
-@property (nonatomic, strong) QPNetworkingProtocal *protocal;
+@property (nonatomic, strong) QPNetworkingProtocol *protocol;
 @property (nonatomic, strong) QPNetworkingInterfaceModel *interface;
 @property (nonatomic, assign) QPNetworkingOperationStatus status;
 
