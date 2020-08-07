@@ -47,7 +47,7 @@ NSString *const CSPropertyOffset = @"Offset";   // 实例变量偏移。
             continue; \
         } \
     } \
-    if (!offset && ![self respondsToSelector:SEL_getter]) { \
+    if ((offset == nil) && ![self respondsToSelector:SEL_getter]) { \
         continue; \
     } \
     NSDictionary *crashProperties = nil; \
@@ -65,7 +65,7 @@ NSString *const CSPropertyOffset = @"Offset";   // 实例变量偏移。
     else if (0 == strcmp(encode, @encode(_type))) { \
         _type returnValue = 0; \
         _type defaultValue = 0; \
-        if (offset) { \
+        if (offset != nil) { \
             returnValue = *(_type *)((__bridge void *)self + offset.unsignedIntValue); \
         } else { \
             returnValue = ((_type (*)(id, SEL))objc_msgSend)(self, SEL_getter); \
@@ -83,7 +83,7 @@ NSString *const CSPropertyOffset = @"Offset";   // 实例变量偏移。
     else if (0 == strcmp(encode, @encode(_type))) { \
         _type returnValue = 0; \
         _type defaultValue = 0; \
-        if (offset) { \
+        if (offset != nil) { \
             returnValue = *(_type *)((__bridge void *)self + offset.unsignedIntValue); \
         } else { \
             returnValue = ((_type (*)(id, SEL))objc_msgSend)(self, SEL_getter); \
@@ -106,7 +106,7 @@ NSString *const CSPropertyOffset = @"Offset";   // 实例变量偏移。
     else if (0 == strcmp(encode, @encode(_type))) { \
         _type returnValue = 0; \
         _type defaultValue = 0; \
-        if (offset) { \
+        if (offset != nil) { \
             returnValue = *(_type *)((__bridge void *)self + offset.unsignedIntValue); \
         } else { \
             returnValue = ((_type (*)(id, SEL))objc_msgSend)(self, SEL_getter); \
@@ -142,7 +142,7 @@ NSString *const CSPropertyOffset = @"Offset";   // 实例变量偏移。
     else if (0 == strcmp(encode, @encode(_type))) { \
         _type returnValue = 0; \
         _type defaultValue = 0; \
-        if (offset) { \
+        if (offset != nil) { \
             returnValue = *(_type *)((__bridge void *)self + offset.unsignedIntValue); \
         } else { \
             returnValue = (_type)((double (*)(id, SEL))objc_msgSend_fpret)(self, SEL_getter); \
@@ -180,7 +180,7 @@ NSString *const CSPropertyOffset = @"Offset";   // 实例变量偏移。
     else if (0 == strcmp(encode, @encode(_type))) { \
         _type returnValue = {0}; \
         _type defaultValue = {0}; \
-        if (offset) { \
+        if (offset != nil) { \
             returnValue = *(_type *)((__bridge void *)self + offset.unsignedIntValue); \
         } else { \
             ((void (*)(void *, id, SEL))objc_msgSend_stret)(&returnValue, self, SEL_getter); \
@@ -201,7 +201,7 @@ NSString *const CSPropertyOffset = @"Offset";   // 实例变量偏移。
     else if (0 == strcmp(encode, @encode(_type))) { \
         _type returnValue = {0}; \
         _type defaultValue = {0}; \
-        if (offset) { \
+        if (offset != nil) { \
             returnValue = *(_type *)((__bridge void *)self + offset.unsignedIntValue); \
         } else { \
             returnValue = ((_type (*)(id, SEL))objc_msgSend)(self, SEL_getter); \
@@ -222,7 +222,7 @@ NSString *const CSPropertyOffset = @"Offset";   // 实例变量偏移。
     else if (0 == strcmp(encode, @encode(_type))) { \
         _type returnValue = {0}; \
         _type defaultValue = {0}; \
-        if (offset) { \
+        if (offset != nil) { \
             returnValue = *(_type *)((__bridge void *)self + offset.unsignedIntValue); \
         } else { \
             if (sizeof(_type) <= sizeof(CGPoint)) { \
@@ -248,7 +248,7 @@ NSString *const CSPropertyOffset = @"Offset";   // 实例变量偏移。
     else if (0 == strcmp(encode, @encode(_type))) { \
         _type returnValue = {0}; \
         _type defaultValue = {0}; \
-        if (offset) { \
+        if (offset != nil) { \
             returnValue = *(_type *)((__bridge void *)self + offset.unsignedIntValue); \
         } else { \
             if (sizeof(_type) <= sizeof(CGPoint)) { \
@@ -270,7 +270,7 @@ NSString *const CSPropertyOffset = @"Offset";   // 实例变量偏移。
     else if ('@' == *encode) { \
         BOOL isBadObject = NO; \
         id returnValue; \
-        if (offset) { \
+        if (offset != nil) { \
             void *pointer = *(void **)((__bridge void *)self + offset.unsignedIntValue); \
             if (pointer && (isBadObject = !ODIsAnObject(pointer))) { \
                 returnValue = [NSString stringWithFormat:@"(exception:*** The pointer %p maybe not an object. ***)", pointer]; \
@@ -311,7 +311,7 @@ NSString *const CSPropertyOffset = @"Offset";   // 实例变量偏移。
 #define ODDumpPropertyEnd() \
     else if ('^' == *encode) { \
         void *returnValue; \
-        if (offset) { \
+        if (offset != nil) { \
             returnValue = *(void **)((__bridge void *)self + offset.unsignedIntValue); \
         } else { \
             returnValue = ((void *(*)(id, SEL))objc_msgSend)(self, SEL_getter); \
@@ -431,11 +431,11 @@ NSArray *ODGetClassProperties(Class class)
 
         // 将属性的参数保存到字典，并放入返回数组中。
 
-        NSString *propertyName = [NSString stringWithCString:name
+        NSString *propertyName = [NSString stringWithCString:(name ?: "")
                                                     encoding:NSASCIIStringEncoding];
-        NSString *propertyType = [NSString stringWithCString:type
+        NSString *propertyType = [NSString stringWithCString:(type ?: "")
                                                     encoding:NSASCIIStringEncoding];
-        NSString *propertyGetter = [NSString stringWithCString:getter
+        NSString *propertyGetter = [NSString stringWithCString:(getter ?: "")
                                                       encoding:NSASCIIStringEncoding];
 
         [array addObject:@{CSPropertyName: propertyName,
@@ -873,16 +873,16 @@ NSArray *ODGetClassProperties(Class class)
 
                           // 对于属性，按名称排序。
 
-                          if (!offset1 && !offset2) {
+                          if ((offset1 == nil) && (offset2 == nil)) {
                               return [name1 compare:name2];
                           }
 
                           // 实例变量排在属性的前面。
 
-                          else if (!offset1 && offset2) {
+                          else if ((offset1 == nil) && (offset2 != nil)) {
                               return NSOrderedDescending;
                           }
-                          else if (offset1 && !offset2) {
+                          else if ((offset1 != nil) && (offset1 == nil)) {
                               return NSOrderedAscending;
                           }
 
@@ -959,7 +959,7 @@ NSArray *ODGetClassProperties(Class class)
         const char *encode = [type cStringUsingEncoding:NSASCIIStringEncoding];
         SEL SEL_getter = NULL;
 
-        if (offset) {
+        if (offset != nil) {
             key = [NSString stringWithFormat:@"%@->%@", host, key];
         } else {
             SEL_getter = NSSelectorFromString(getter);
