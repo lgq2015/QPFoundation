@@ -31,16 +31,23 @@ enhancement tool classes, network interface, debugging, etc.
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.8'
-  s.tvos.deployment_target = '9.0'
-  s.watchos.deployment_target = '2.0'
+  # s.tvos.deployment_target = '9.0'
+  # s.watchos.deployment_target = '2.0'
 
-  s.source_files = 'QPFoundation/Classes/**/*'
+  s.ios.source_files = 'QPFoundation/Classes/**/*'
+  s.osx.source_files = ['QPFoundation/Classes/**/Networking/*',
+                        'QPFoundation/Classes/**/QPPublicHeader.h',
+                        'QPFoundation/Classes/**/QPFoundation.h',]
 
-  # s.resource_bundles = {
-  #   'QPFoundation' => ['QPFoundation/Assets/*.png']
-  # }
+  s.ios.resource_bundles = {
+    'QPFoundation' => ['QPFoundation/Assets/**/*']
+  }
 
-  s.public_header_files = 'QPFoundation/Classes/**/*.h'
+  s.ios.public_header_files = 'QPFoundation/Classes/**/*.h'
+  s.osx.public_header_files = ['QPFoundation/Classes/**/Networking/*.h',
+                               'QPFoundation/Classes/**/QPPublicHeader.h',
+                               'QPFoundation/Classes/**/QPFoundation.h',]
+
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

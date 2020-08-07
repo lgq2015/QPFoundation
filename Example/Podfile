@@ -1,7 +1,12 @@
 use_frameworks!
 
-platform :ios, '8.0'
-
 target 'QPFoundationExample' do
+  platform :ios, '8.0'
+  pod 'QPFoundation', :path => '../'
+end
+
+target 'QPGenerateNetworkingSources' do
+  use_frameworks! :linkage => :static
+  platform :osx, '10.8'
   pod 'QPFoundation', :path => '../'
 end

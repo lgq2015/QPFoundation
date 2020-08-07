@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6003F589195388D20070C39A"
-               BuildableName = "QPFoundationExample.app"
-               BlueprintName = "QPFoundationExample"
+               BlueprintIdentifier = "1BE9DEC924DC9D6000299A3D"
+               BuildableName = "QPGenerateNetworkingSources"
+               BlueprintName = "QPGenerateNetworkingSources"
                ReferencedContainer = "container:QPFoundationExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,15 +27,6 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "QPFoundationExample.app"
-            BlueprintName = "QPFoundationExample"
-            ReferencedContainer = "container:QPFoundationExample.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <Testables>
       </Testables>
    </TestAction>
@@ -53,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "QPFoundationExample.app"
-            BlueprintName = "QPFoundationExample"
+            BlueprintIdentifier = "1BE9DEC924DC9D6000299A3D"
+            BuildableName = "QPGenerateNetworkingSources"
+            BlueprintName = "QPGenerateNetworkingSources"
             ReferencedContainer = "container:QPFoundationExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -70,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "QPFoundationExample.app"
-            BlueprintName = "QPFoundationExample"
+            BlueprintIdentifier = "1BE9DEC924DC9D6000299A3D"
+            BuildableName = "QPGenerateNetworkingSources"
+            BlueprintName = "QPGenerateNetworkingSources"
             ReferencedContainer = "container:QPFoundationExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

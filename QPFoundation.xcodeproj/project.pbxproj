@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B117AC624DCC6A2004BCDFB /* QPGenerateNetworkingSources.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1B117AC524DCC6A2004BCDFB /* QPGenerateNetworkingSources.sh */; };
 		1B188A3222BA131700561366 /* QPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B188A2822BA131700561366 /* QPFoundation.framework */; };
 		1B188A3722BA131700561366 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B188A3622BA131700561366 /* Tests.m */; };
 		1B188A3922BA131700561366 /* QPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B188A2B22BA131700561366 /* QPFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -148,6 +149,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B117AC524DCC6A2004BCDFB /* QPGenerateNetworkingSources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = QPGenerateNetworkingSources.sh; sourceTree = "<group>"; };
 		1B188A2822BA131700561366 /* QPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B188A2B22BA131700561366 /* QPFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPFoundation.h; sourceTree = "<group>"; };
 		1B188A2C22BA131700561366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -351,6 +353,8 @@
 		1B75143822BBF39E006F7D56 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				1B969BF524DC77CC002AAD7A /* QPObjectPropertyListTemplate.numbers */,
+				1B117AC524DCC6A2004BCDFB /* QPGenerateNetworkingSources.sh */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -442,7 +446,6 @@
 				1B969BF424DC77CC002AAD7A /* NSString+UsingEncoding.m */,
 				1B969C0424DC77CC002AAD7A /* NSString+HTMLEscape.h */,
 				1B969BF824DC77CC002AAD7A /* NSString+HTMLEscape.m */,
-				1B969BF524DC77CC002AAD7A /* QPObjectPropertyListTemplate.numbers */,
 				1B969BFF24DC77CC002AAD7A /* QPObjectPropertyListSerialization.h */,
 				1B969BF224DC77CC002AAD7A /* QPObjectPropertyListSerialization.m */,
 			);
@@ -735,6 +738,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B969C6024DC77CC002AAD7A /* QPObjectPropertyListTemplate.numbers in Resources */,
+				1B117AC624DCC6A2004BCDFB /* QPGenerateNetworkingSources.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
