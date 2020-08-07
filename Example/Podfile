@@ -3,6 +3,7 @@ use_frameworks!
 target 'QPFoundationExample' do
   platform :ios, '8.0'
   pod 'QPFoundation', :path => '../'
+  pod 'Masonry', '~> 1.1.0'
 end
 
 target 'QPGenerateNetworkingSources' do

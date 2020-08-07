@@ -14,4 +14,5 @@
     @import UIKit;
     @import Foundation;
     @import QPFoundation;
+    @import Masonry;
 #endif
