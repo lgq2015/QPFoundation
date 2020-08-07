@@ -16,4 +16,19 @@ FOUNDATION_EXPORT const unsigned char QPFoundationVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <QPFoundation/PublicHeader.h>
 
+#import <QPFoundation/QPPublicHeader.h>
 
+#if (TARGET_OS_IPHONE || TARGET_OS_SIMULATOR)
+
+#import <QPFoundation/QPFoundationPreferences.h>
+#import <QPFoundation/QPApplicationFramework.h>
+#import <QPFoundation/QPNetworking.h>
+#import <QPFoundation/QPEnhancedFoundation.h>
+#import <QPFoundation/QPEnhancedUI.h>
+#import <QPFoundation/QPEnhancedDebugging.h>
+
+#else /* (TARGET_OS_IPHONE || TARGET_OS_SIMULATOR) */
+
+#import <QPFoundation/QPNetworking.h>
+
+#endif /* !(TARGET_OS_IPHONE || TARGET_OS_SIMULATOR) */

@@ -10,16 +10,124 @@
 		1B188A3222BA131700561366 /* QPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B188A2822BA131700561366 /* QPFoundation.framework */; };
 		1B188A3722BA131700561366 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B188A3622BA131700561366 /* Tests.m */; };
 		1B188A3922BA131700561366 /* QPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B188A2B22BA131700561366 /* QPFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B969C3724DC77CC002AAD7A /* QPNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BCA24DC77CC002AAD7A /* QPNetworking.h */; };
+		1B969C3824DC77CC002AAD7A /* QPNetworkingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCB24DC77CC002AAD7A /* QPNetworkingOperation.m */; };
+		1B969C3924DC77CC002AAD7A /* QPNetworkingProtocal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCC24DC77CC002AAD7A /* QPNetworkingProtocal.m */; };
+		1B969C3A24DC77CC002AAD7A /* QPNetworkingDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCD24DC77CC002AAD7A /* QPNetworkingDefinition.m */; };
+		1B969C3B24DC77CC002AAD7A /* QPNetworkingOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BCE24DC77CC002AAD7A /* QPNetworkingOperation.h */; };
+		1B969C3C24DC77CC002AAD7A /* QPNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCF24DC77CC002AAD7A /* QPNetworking.m */; };
+		1B969C3D24DC77CC002AAD7A /* QPNetworkingProtocal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD024DC77CC002AAD7A /* QPNetworkingProtocal.h */; };
+		1B969C3E24DC77CC002AAD7A /* QPNetworkingDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD124DC77CC002AAD7A /* QPNetworkingDefinition.h */; };
+		1B969C3F24DC77CC002AAD7A /* QPFullScreenNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BD324DC77CC002AAD7A /* QPFullScreenNavigationController.m */; };
+		1B969C4024DC77CC002AAD7A /* QPTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD424DC77CC002AAD7A /* QPTabBarController.h */; };
+		1B969C4124DC77CC002AAD7A /* QPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BD524DC77CC002AAD7A /* QPNavigationController.m */; };
+		1B969C4224DC77CC002AAD7A /* QPCustomBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD624DC77CC002AAD7A /* QPCustomBar.h */; };
+		1B969C4324DC77CC002AAD7A /* QPApplicationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD724DC77CC002AAD7A /* QPApplicationController.h */; };
+		1B969C4424DC77CC002AAD7A /* QPToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BD824DC77CC002AAD7A /* QPToolbar.m */; };
+		1B969C4524DC77CC002AAD7A /* QPApplicationFrameworkObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD924DC77CC002AAD7A /* QPApplicationFrameworkObject.h */; };
+		1B969C4624DC77CC002AAD7A /* QPNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BDA24DC77CC002AAD7A /* QPNavigationBar.m */; };
+		1B969C4724DC77CC002AAD7A /* QPScrollPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BDB24DC77CC002AAD7A /* QPScrollPanelController.m */; };
+		1B969C4824DC77CC002AAD7A /* QPApplicationFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BDC24DC77CC002AAD7A /* QPApplicationFramework.m */; };
+		1B969C4924DC77CC002AAD7A /* QPPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BDD24DC77CC002AAD7A /* QPPanelController.m */; };
+		1B969C4A24DC77CC002AAD7A /* QPBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BDE24DC77CC002AAD7A /* QPBaseViewController.h */; };
+		1B969C4B24DC77CC002AAD7A /* QPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BDF24DC77CC002AAD7A /* QPTabBar.m */; };
+		1B969C4C24DC77CC002AAD7A /* UIResponder+ApplicationFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BE024DC77CC002AAD7A /* UIResponder+ApplicationFramework.m */; };
+		1B969C4D24DC77CC002AAD7A /* QPLinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BE124DC77CC002AAD7A /* QPLinker.m */; };
+		1B969C4E24DC77CC002AAD7A /* QPNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BE224DC77CC002AAD7A /* QPNavigationController.h */; };
+		1B969C4F24DC77CC002AAD7A /* QPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BE324DC77CC002AAD7A /* QPTabBarController.m */; };
+		1B969C5024DC77CC002AAD7A /* QPFullScreenNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BE424DC77CC002AAD7A /* QPFullScreenNavigationController.h */; };
+		1B969C5124DC77CC002AAD7A /* QPNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BE524DC77CC002AAD7A /* QPNavigationBar.h */; };
+		1B969C5224DC77CC002AAD7A /* QPToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BE624DC77CC002AAD7A /* QPToolbar.h */; };
+		1B969C5324DC77CC002AAD7A /* QPApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BE724DC77CC002AAD7A /* QPApplicationController.m */; };
+		1B969C5424DC77CC002AAD7A /* QPCustomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BE824DC77CC002AAD7A /* QPCustomBar.m */; };
+		1B969C5524DC77CC002AAD7A /* QPApplicationFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BE924DC77CC002AAD7A /* QPApplicationFramework.h */; };
+		1B969C5624DC77CC002AAD7A /* QPScrollPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BEA24DC77CC002AAD7A /* QPScrollPanelController.h */; };
+		1B969C5724DC77CC002AAD7A /* QPLinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BEB24DC77CC002AAD7A /* QPLinker.h */; };
+		1B969C5824DC77CC002AAD7A /* UIResponder+ApplicationFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BEC24DC77CC002AAD7A /* UIResponder+ApplicationFramework.h */; };
+		1B969C5924DC77CC002AAD7A /* QPTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BED24DC77CC002AAD7A /* QPTabBar.h */; };
+		1B969C5A24DC77CC002AAD7A /* QPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BEE24DC77CC002AAD7A /* QPBaseViewController.m */; };
+		1B969C5B24DC77CC002AAD7A /* QPPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BEF24DC77CC002AAD7A /* QPPanelController.h */; };
+		1B969C5C24DC77CC002AAD7A /* NSNotificationCenter+Autoremove.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BF124DC77CC002AAD7A /* NSNotificationCenter+Autoremove.m */; };
+		1B969C5D24DC77CC002AAD7A /* QPObjectPropertyListSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BF224DC77CC002AAD7A /* QPObjectPropertyListSerialization.m */; };
+		1B969C5E24DC77CC002AAD7A /* NSObject+AtDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BF324DC77CC002AAD7A /* NSObject+AtDealloc.m */; };
+		1B969C5F24DC77CC002AAD7A /* NSString+UsingEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BF424DC77CC002AAD7A /* NSString+UsingEncoding.m */; };
+		1B969C6024DC77CC002AAD7A /* QPObjectPropertyListTemplate.numbers in Resources */ = {isa = PBXBuildFile; fileRef = 1B969BF524DC77CC002AAD7A /* QPObjectPropertyListTemplate.numbers */; };
+		1B969C6124DC77CD002AAD7A /* NSObject+BlockKeyValueObserving.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BF624DC77CC002AAD7A /* NSObject+BlockKeyValueObserving.h */; };
+		1B969C6224DC77CD002AAD7A /* QPExchangeImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BF724DC77CC002AAD7A /* QPExchangeImplementation.m */; };
+		1B969C6324DC77CD002AAD7A /* NSString+HTMLEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BF824DC77CC002AAD7A /* NSString+HTMLEscape.m */; };
+		1B969C6424DC77CD002AAD7A /* NSObject+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BF924DC77CC002AAD7A /* NSObject+Swizzling.h */; };
+		1B969C6524DC77CD002AAD7A /* NSObject+Association.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BFA24DC77CC002AAD7A /* NSObject+Association.m */; };
+		1B969C6624DC77CD002AAD7A /* QPSetNeedsWithBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BFB24DC77CC002AAD7A /* QPSetNeedsWithBlock.h */; };
+		1B969C6724DC77CD002AAD7A /* NSNotificationCenter+Autoremove.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BFC24DC77CC002AAD7A /* NSNotificationCenter+Autoremove.h */; };
+		1B969C6824DC77CD002AAD7A /* NSString+UsingEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BFD24DC77CC002AAD7A /* NSString+UsingEncoding.h */; };
+		1B969C6924DC77CD002AAD7A /* NSObject+AtDealloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BFE24DC77CC002AAD7A /* NSObject+AtDealloc.h */; };
+		1B969C6A24DC77CD002AAD7A /* QPObjectPropertyListSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BFF24DC77CC002AAD7A /* QPObjectPropertyListSerialization.h */; };
+		1B969C6B24DC77CD002AAD7A /* NSObject+BlockKeyValueObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C0024DC77CC002AAD7A /* NSObject+BlockKeyValueObserving.m */; };
+		1B969C6C24DC77CD002AAD7A /* QPNonReentrantLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C0124DC77CC002AAD7A /* QPNonReentrantLock.h */; };
+		1B969C6D24DC77CD002AAD7A /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C0224DC77CC002AAD7A /* NSObject+Swizzling.m */; };
+		1B969C6E24DC77CD002AAD7A /* NSObject+Association.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C0324DC77CC002AAD7A /* NSObject+Association.h */; };
+		1B969C6F24DC77CD002AAD7A /* NSString+HTMLEscape.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C0424DC77CC002AAD7A /* NSString+HTMLEscape.h */; };
+		1B969C7024DC77CD002AAD7A /* QPEnhancedFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C0524DC77CC002AAD7A /* QPEnhancedFoundation.h */; };
+		1B969C7124DC77CD002AAD7A /* QPExchangeImplementation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C0624DC77CC002AAD7A /* QPExchangeImplementation.h */; };
+		1B969C7224DC77CD002AAD7A /* UIButton+ImageAndTitleSpacing.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C0824DC77CC002AAD7A /* UIButton+ImageAndTitleSpacing.h */; };
+		1B969C7324DC77CD002AAD7A /* UINavigationItem+Assignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C0924DC77CC002AAD7A /* UINavigationItem+Assignment.m */; };
+		1B969C7424DC77CD002AAD7A /* UIButton+Enlarge.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C0A24DC77CC002AAD7A /* UIButton+Enlarge.h */; };
+		1B969C7524DC77CD002AAD7A /* NSAttributedString+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C0B24DC77CC002AAD7A /* NSAttributedString+Size.h */; };
+		1B969C7624DC77CD002AAD7A /* UITableView+NeedsReloadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C0C24DC77CC002AAD7A /* UITableView+NeedsReloadData.m */; };
+		1B969C7724DC77CD002AAD7A /* UIButton+StateBackgroundColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C0D24DC77CC002AAD7A /* UIButton+StateBackgroundColor.h */; };
+		1B969C7824DC77CD002AAD7A /* UIColor+Conversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C0E24DC77CC002AAD7A /* UIColor+Conversion.h */; };
+		1B969C7924DC77CD002AAD7A /* NSString+SizeWithFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C0F24DC77CC002AAD7A /* NSString+SizeWithFont.m */; };
+		1B969C7A24DC77CD002AAD7A /* QPKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C1024DC77CC002AAD7A /* QPKeyboardManager.h */; };
+		1B969C7B24DC77CD002AAD7A /* UIBarButtonItem+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C1124DC77CC002AAD7A /* UIBarButtonItem+Factory.m */; };
+		1B969C7C24DC77CD002AAD7A /* UIViewController+SegueBlockPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C1224DC77CC002AAD7A /* UIViewController+SegueBlockPerformer.m */; };
+		1B969C7D24DC77CD002AAD7A /* UITabBarItem+Assignment.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C1324DC77CC002AAD7A /* UITabBarItem+Assignment.h */; };
+		1B969C7E24DC77CD002AAD7A /* UITextField+PlaceholderColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C1424DC77CC002AAD7A /* UITextField+PlaceholderColor.h */; };
+		1B969C7F24DC77CD002AAD7A /* UIView+NibBasedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C1524DC77CC002AAD7A /* UIView+NibBasedView.h */; };
+		1B969C8024DC77CD002AAD7A /* UIImage+Resizable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C1624DC77CC002AAD7A /* UIImage+Resizable.h */; };
+		1B969C8124DC77CD002AAD7A /* NSLayoutConstraint+SimpleConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C1724DC77CC002AAD7A /* NSLayoutConstraint+SimpleConstraint.m */; };
+		1B969C8224DC77CD002AAD7A /* UINavigationItem+Assignment.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C1824DC77CC002AAD7A /* UINavigationItem+Assignment.h */; };
+		1B969C8324DC77CD002AAD7A /* UIButton+ImageAndTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C1924DC77CC002AAD7A /* UIButton+ImageAndTitleSpacing.m */; };
+		1B969C8424DC77CD002AAD7A /* UIColor+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C1A24DC77CC002AAD7A /* UIColor+Conversion.m */; };
+		1B969C8524DC77CD002AAD7A /* UIButton+StateBackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C1B24DC77CC002AAD7A /* UIButton+StateBackgroundColor.m */; };
+		1B969C8624DC77CD002AAD7A /* UITableView+NeedsReloadData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C1C24DC77CC002AAD7A /* UITableView+NeedsReloadData.h */; };
+		1B969C8724DC77CD002AAD7A /* NSAttributedString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C1D24DC77CC002AAD7A /* NSAttributedString+Size.m */; };
+		1B969C8824DC77CD002AAD7A /* UIButton+Enlarge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C1E24DC77CC002AAD7A /* UIButton+Enlarge.m */; };
+		1B969C8924DC77CD002AAD7A /* QPEnhancedUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C1F24DC77CC002AAD7A /* QPEnhancedUI.h */; };
+		1B969C8A24DC77CD002AAD7A /* UIBarButtonItem+Factory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C2024DC77CC002AAD7A /* UIBarButtonItem+Factory.h */; };
+		1B969C8B24DC77CD002AAD7A /* QPKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C2124DC77CC002AAD7A /* QPKeyboardManager.m */; };
+		1B969C8C24DC77CD002AAD7A /* NSString+SizeWithFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C2224DC77CC002AAD7A /* NSString+SizeWithFont.h */; };
+		1B969C8D24DC77CD002AAD7A /* NSLayoutConstraint+SimpleConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C2324DC77CC002AAD7A /* NSLayoutConstraint+SimpleConstraint.h */; };
+		1B969C8E24DC77CD002AAD7A /* UIImage+Resizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C2424DC77CC002AAD7A /* UIImage+Resizable.m */; };
+		1B969C8F24DC77CD002AAD7A /* UIView+NibBasedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C2524DC77CC002AAD7A /* UIView+NibBasedView.m */; };
+		1B969C9024DC77CD002AAD7A /* UITabBarItem+Assignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C2624DC77CC002AAD7A /* UITabBarItem+Assignment.m */; };
+		1B969C9124DC77CD002AAD7A /* UITextField+PlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C2724DC77CC002AAD7A /* UITextField+PlaceholderColor.m */; };
+		1B969C9224DC77CD002AAD7A /* UIViewController+SegueBlockPerformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C2824DC77CC002AAD7A /* UIViewController+SegueBlockPerformer.h */; };
+		1B969C9324DC77CD002AAD7A /* QPFoundationPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C2A24DC77CC002AAD7A /* QPFoundationPreferences.m */; };
+		1B969C9424DC77CD002AAD7A /* QPPublicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C2B24DC77CC002AAD7A /* QPPublicHeader.h */; };
+		1B969C9524DC77CD002AAD7A /* QPFoundationPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C2C24DC77CC002AAD7A /* QPFoundationPreferences.h */; };
+		1B969C9624DC77CD002AAD7A /* QPCrashMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C2E24DC77CC002AAD7A /* QPCrashMonitor.m */; };
+		1B969C9724DC77CD002AAD7A /* QPLogRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C2F24DC77CC002AAD7A /* QPLogRecorder.m */; };
+		1B969C9824DC77CD002AAD7A /* NSObject+Dump.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C3024DC77CC002AAD7A /* NSObject+Dump.h */; };
+		1B969C9924DC77CD002AAD7A /* UIView+Tree.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C3124DC77CC002AAD7A /* UIView+Tree.h */; };
+		1B969C9A24DC77CD002AAD7A /* QPEnhancedDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C3224DC77CC002AAD7A /* QPEnhancedDebugging.h */; };
+		1B969C9B24DC77CD002AAD7A /* QPCrashMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C3324DC77CC002AAD7A /* QPCrashMonitor.h */; };
+		1B969C9C24DC77CD002AAD7A /* NSObject+Dump.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C3424DC77CC002AAD7A /* NSObject+Dump.m */; };
+		1B969C9D24DC77CD002AAD7A /* QPLogRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C3524DC77CC002AAD7A /* QPLogRecorder.h */; };
+		1B969C9E24DC77CD002AAD7A /* UIView+Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969C3624DC77CC002AAD7A /* UIView+Tree.m */; };
+		1B969C9F24DC7C26002AAD7A /* QPNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BCA24DC77CC002AAD7A /* QPNetworking.h */; };
+		1B969CA024DC7C29002AAD7A /* QPNetworkingDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD124DC77CC002AAD7A /* QPNetworkingDefinition.h */; };
+		1B969CA124DC7C2C002AAD7A /* QPNetworkingProtocal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BD024DC77CC002AAD7A /* QPNetworkingProtocal.h */; };
+		1B969CA224DC7C2E002AAD7A /* QPNetworkingOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969BCE24DC77CC002AAD7A /* QPNetworkingOperation.h */; };
+		1B969CA324DC7C39002AAD7A /* QPPublicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B969C2B24DC77CC002AAD7A /* QPPublicHeader.h */; };
+		1B969CA424DC7C5B002AAD7A /* QPNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCF24DC77CC002AAD7A /* QPNetworking.m */; };
+		1B969CA524DC7C5F002AAD7A /* QPNetworkingDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCD24DC77CC002AAD7A /* QPNetworkingDefinition.m */; };
+		1B969CA624DC7C61002AAD7A /* QPNetworkingProtocal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCC24DC77CC002AAD7A /* QPNetworkingProtocal.m */; };
+		1B969CA724DC7C64002AAD7A /* QPNetworkingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B969BCB24DC77CC002AAD7A /* QPNetworkingOperation.m */; };
 		1BBD3A3522BB369500CD7BCD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBD3A3422BB369500CD7BCD /* XCTest.framework */; };
 		1BBD3A3722BB369D00CD7BCD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBD3A3622BB369D00CD7BCD /* XCTest.framework */; };
-		1BBD3A3922BB36A300CD7BCD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBD3A3822BB36A300CD7BCD /* XCTest.framework */; };
 		1BF29CAB22BA24940046611D /* QPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B188A2B22BA131700561366 /* QPFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1BF29CB822BA27C80046611D /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B188A3622BA131700561366 /* Tests.m */; };
 		1BF29CBA22BA27C80046611D /* QPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B188A2822BA131700561366 /* QPFoundation.framework */; };
-		1BF29CC322BA2AD00046611D /* QPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B188A2B22BA131700561366 /* QPFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BF29CD022BA2B590046611D /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B188A3622BA131700561366 /* Tests.m */; };
-		1BF29CD222BA2B590046611D /* QPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B188A2822BA131700561366 /* QPFoundation.framework */; };
-		1BF29CDB22BA2C230046611D /* QPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B188A2B22BA131700561366 /* QPFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +145,6 @@
 			remoteGlobalIDString = 1BF29CA922BA24940046611D;
 			remoteInfo = "QPFoundation-macOS";
 		};
-		1BBD3A4222BB611A00CD7BCD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1B188A1F22BA131700561366 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1BF29CC122BA2AD00046611D;
-			remoteInfo = "QPFoundation-tvOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -53,15 +154,116 @@
 		1B188A3122BA131700561366 /* QPFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QPFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B188A3622BA131700561366 /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		1B188A3822BA131700561366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B969BCA24DC77CC002AAD7A /* QPNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNetworking.h; sourceTree = "<group>"; };
+		1B969BCB24DC77CC002AAD7A /* QPNetworkingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPNetworkingOperation.m; sourceTree = "<group>"; };
+		1B969BCC24DC77CC002AAD7A /* QPNetworkingProtocal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPNetworkingProtocal.m; sourceTree = "<group>"; };
+		1B969BCD24DC77CC002AAD7A /* QPNetworkingDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPNetworkingDefinition.m; sourceTree = "<group>"; };
+		1B969BCE24DC77CC002AAD7A /* QPNetworkingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNetworkingOperation.h; sourceTree = "<group>"; };
+		1B969BCF24DC77CC002AAD7A /* QPNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPNetworking.m; sourceTree = "<group>"; };
+		1B969BD024DC77CC002AAD7A /* QPNetworkingProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNetworkingProtocal.h; sourceTree = "<group>"; };
+		1B969BD124DC77CC002AAD7A /* QPNetworkingDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNetworkingDefinition.h; sourceTree = "<group>"; };
+		1B969BD324DC77CC002AAD7A /* QPFullScreenNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPFullScreenNavigationController.m; sourceTree = "<group>"; };
+		1B969BD424DC77CC002AAD7A /* QPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPTabBarController.h; sourceTree = "<group>"; };
+		1B969BD524DC77CC002AAD7A /* QPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPNavigationController.m; sourceTree = "<group>"; };
+		1B969BD624DC77CC002AAD7A /* QPCustomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPCustomBar.h; sourceTree = "<group>"; };
+		1B969BD724DC77CC002AAD7A /* QPApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPApplicationController.h; sourceTree = "<group>"; };
+		1B969BD824DC77CC002AAD7A /* QPToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPToolbar.m; sourceTree = "<group>"; };
+		1B969BD924DC77CC002AAD7A /* QPApplicationFrameworkObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPApplicationFrameworkObject.h; sourceTree = "<group>"; };
+		1B969BDA24DC77CC002AAD7A /* QPNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPNavigationBar.m; sourceTree = "<group>"; };
+		1B969BDB24DC77CC002AAD7A /* QPScrollPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPScrollPanelController.m; sourceTree = "<group>"; };
+		1B969BDC24DC77CC002AAD7A /* QPApplicationFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPApplicationFramework.m; sourceTree = "<group>"; };
+		1B969BDD24DC77CC002AAD7A /* QPPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPPanelController.m; sourceTree = "<group>"; };
+		1B969BDE24DC77CC002AAD7A /* QPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPBaseViewController.h; sourceTree = "<group>"; };
+		1B969BDF24DC77CC002AAD7A /* QPTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPTabBar.m; sourceTree = "<group>"; };
+		1B969BE024DC77CC002AAD7A /* UIResponder+ApplicationFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+ApplicationFramework.m"; sourceTree = "<group>"; };
+		1B969BE124DC77CC002AAD7A /* QPLinker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPLinker.m; sourceTree = "<group>"; };
+		1B969BE224DC77CC002AAD7A /* QPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNavigationController.h; sourceTree = "<group>"; };
+		1B969BE324DC77CC002AAD7A /* QPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPTabBarController.m; sourceTree = "<group>"; };
+		1B969BE424DC77CC002AAD7A /* QPFullScreenNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPFullScreenNavigationController.h; sourceTree = "<group>"; };
+		1B969BE524DC77CC002AAD7A /* QPNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNavigationBar.h; sourceTree = "<group>"; };
+		1B969BE624DC77CC002AAD7A /* QPToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPToolbar.h; sourceTree = "<group>"; };
+		1B969BE724DC77CC002AAD7A /* QPApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPApplicationController.m; sourceTree = "<group>"; };
+		1B969BE824DC77CC002AAD7A /* QPCustomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPCustomBar.m; sourceTree = "<group>"; };
+		1B969BE924DC77CC002AAD7A /* QPApplicationFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPApplicationFramework.h; sourceTree = "<group>"; };
+		1B969BEA24DC77CC002AAD7A /* QPScrollPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPScrollPanelController.h; sourceTree = "<group>"; };
+		1B969BEB24DC77CC002AAD7A /* QPLinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPLinker.h; sourceTree = "<group>"; };
+		1B969BEC24DC77CC002AAD7A /* UIResponder+ApplicationFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+ApplicationFramework.h"; sourceTree = "<group>"; };
+		1B969BED24DC77CC002AAD7A /* QPTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPTabBar.h; sourceTree = "<group>"; };
+		1B969BEE24DC77CC002AAD7A /* QPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPBaseViewController.m; sourceTree = "<group>"; };
+		1B969BEF24DC77CC002AAD7A /* QPPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPPanelController.h; sourceTree = "<group>"; };
+		1B969BF124DC77CC002AAD7A /* NSNotificationCenter+Autoremove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Autoremove.m"; sourceTree = "<group>"; };
+		1B969BF224DC77CC002AAD7A /* QPObjectPropertyListSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPObjectPropertyListSerialization.m; sourceTree = "<group>"; };
+		1B969BF324DC77CC002AAD7A /* NSObject+AtDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AtDealloc.m"; sourceTree = "<group>"; };
+		1B969BF424DC77CC002AAD7A /* NSString+UsingEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UsingEncoding.m"; sourceTree = "<group>"; };
+		1B969BF524DC77CC002AAD7A /* QPObjectPropertyListTemplate.numbers */ = {isa = PBXFileReference; lastKnownFileType = file; path = QPObjectPropertyListTemplate.numbers; sourceTree = "<group>"; };
+		1B969BF624DC77CC002AAD7A /* NSObject+BlockKeyValueObserving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BlockKeyValueObserving.h"; sourceTree = "<group>"; };
+		1B969BF724DC77CC002AAD7A /* QPExchangeImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPExchangeImplementation.m; sourceTree = "<group>"; };
+		1B969BF824DC77CC002AAD7A /* NSString+HTMLEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTMLEscape.m"; sourceTree = "<group>"; };
+		1B969BF924DC77CC002AAD7A /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		1B969BFA24DC77CC002AAD7A /* NSObject+Association.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Association.m"; sourceTree = "<group>"; };
+		1B969BFB24DC77CC002AAD7A /* QPSetNeedsWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPSetNeedsWithBlock.h; sourceTree = "<group>"; };
+		1B969BFC24DC77CC002AAD7A /* NSNotificationCenter+Autoremove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Autoremove.h"; sourceTree = "<group>"; };
+		1B969BFD24DC77CC002AAD7A /* NSString+UsingEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UsingEncoding.h"; sourceTree = "<group>"; };
+		1B969BFE24DC77CC002AAD7A /* NSObject+AtDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AtDealloc.h"; sourceTree = "<group>"; };
+		1B969BFF24DC77CC002AAD7A /* QPObjectPropertyListSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPObjectPropertyListSerialization.h; sourceTree = "<group>"; };
+		1B969C0024DC77CC002AAD7A /* NSObject+BlockKeyValueObserving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BlockKeyValueObserving.m"; sourceTree = "<group>"; };
+		1B969C0124DC77CC002AAD7A /* QPNonReentrantLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPNonReentrantLock.h; sourceTree = "<group>"; };
+		1B969C0224DC77CC002AAD7A /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		1B969C0324DC77CC002AAD7A /* NSObject+Association.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Association.h"; sourceTree = "<group>"; };
+		1B969C0424DC77CC002AAD7A /* NSString+HTMLEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTMLEscape.h"; sourceTree = "<group>"; };
+		1B969C0524DC77CC002AAD7A /* QPEnhancedFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPEnhancedFoundation.h; sourceTree = "<group>"; };
+		1B969C0624DC77CC002AAD7A /* QPExchangeImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPExchangeImplementation.h; sourceTree = "<group>"; };
+		1B969C0824DC77CC002AAD7A /* UIButton+ImageAndTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageAndTitleSpacing.h"; sourceTree = "<group>"; };
+		1B969C0924DC77CC002AAD7A /* UINavigationItem+Assignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Assignment.m"; sourceTree = "<group>"; };
+		1B969C0A24DC77CC002AAD7A /* UIButton+Enlarge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Enlarge.h"; sourceTree = "<group>"; };
+		1B969C0B24DC77CC002AAD7A /* NSAttributedString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Size.h"; sourceTree = "<group>"; };
+		1B969C0C24DC77CC002AAD7A /* UITableView+NeedsReloadData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+NeedsReloadData.m"; sourceTree = "<group>"; };
+		1B969C0D24DC77CC002AAD7A /* UIButton+StateBackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+StateBackgroundColor.h"; sourceTree = "<group>"; };
+		1B969C0E24DC77CC002AAD7A /* UIColor+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Conversion.h"; sourceTree = "<group>"; };
+		1B969C0F24DC77CC002AAD7A /* NSString+SizeWithFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SizeWithFont.m"; sourceTree = "<group>"; };
+		1B969C1024DC77CC002AAD7A /* QPKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPKeyboardManager.h; sourceTree = "<group>"; };
+		1B969C1124DC77CC002AAD7A /* UIBarButtonItem+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Factory.m"; sourceTree = "<group>"; };
+		1B969C1224DC77CC002AAD7A /* UIViewController+SegueBlockPerformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SegueBlockPerformer.m"; sourceTree = "<group>"; };
+		1B969C1324DC77CC002AAD7A /* UITabBarItem+Assignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+Assignment.h"; sourceTree = "<group>"; };
+		1B969C1424DC77CC002AAD7A /* UITextField+PlaceholderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceholderColor.h"; sourceTree = "<group>"; };
+		1B969C1524DC77CC002AAD7A /* UIView+NibBasedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NibBasedView.h"; sourceTree = "<group>"; };
+		1B969C1624DC77CC002AAD7A /* UIImage+Resizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resizable.h"; sourceTree = "<group>"; };
+		1B969C1724DC77CC002AAD7A /* NSLayoutConstraint+SimpleConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+SimpleConstraint.m"; sourceTree = "<group>"; };
+		1B969C1824DC77CC002AAD7A /* UINavigationItem+Assignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Assignment.h"; sourceTree = "<group>"; };
+		1B969C1924DC77CC002AAD7A /* UIButton+ImageAndTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageAndTitleSpacing.m"; sourceTree = "<group>"; };
+		1B969C1A24DC77CC002AAD7A /* UIColor+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Conversion.m"; sourceTree = "<group>"; };
+		1B969C1B24DC77CC002AAD7A /* UIButton+StateBackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+StateBackgroundColor.m"; sourceTree = "<group>"; };
+		1B969C1C24DC77CC002AAD7A /* UITableView+NeedsReloadData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+NeedsReloadData.h"; sourceTree = "<group>"; };
+		1B969C1D24DC77CC002AAD7A /* NSAttributedString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Size.m"; sourceTree = "<group>"; };
+		1B969C1E24DC77CC002AAD7A /* UIButton+Enlarge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Enlarge.m"; sourceTree = "<group>"; };
+		1B969C1F24DC77CC002AAD7A /* QPEnhancedUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPEnhancedUI.h; sourceTree = "<group>"; };
+		1B969C2024DC77CC002AAD7A /* UIBarButtonItem+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Factory.h"; sourceTree = "<group>"; };
+		1B969C2124DC77CC002AAD7A /* QPKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPKeyboardManager.m; sourceTree = "<group>"; };
+		1B969C2224DC77CC002AAD7A /* NSString+SizeWithFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SizeWithFont.h"; sourceTree = "<group>"; };
+		1B969C2324DC77CC002AAD7A /* NSLayoutConstraint+SimpleConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+SimpleConstraint.h"; sourceTree = "<group>"; };
+		1B969C2424DC77CC002AAD7A /* UIImage+Resizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resizable.m"; sourceTree = "<group>"; };
+		1B969C2524DC77CC002AAD7A /* UIView+NibBasedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NibBasedView.m"; sourceTree = "<group>"; };
+		1B969C2624DC77CC002AAD7A /* UITabBarItem+Assignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+Assignment.m"; sourceTree = "<group>"; };
+		1B969C2724DC77CC002AAD7A /* UITextField+PlaceholderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceholderColor.m"; sourceTree = "<group>"; };
+		1B969C2824DC77CC002AAD7A /* UIViewController+SegueBlockPerformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SegueBlockPerformer.h"; sourceTree = "<group>"; };
+		1B969C2A24DC77CC002AAD7A /* QPFoundationPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPFoundationPreferences.m; sourceTree = "<group>"; };
+		1B969C2B24DC77CC002AAD7A /* QPPublicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPPublicHeader.h; sourceTree = "<group>"; };
+		1B969C2C24DC77CC002AAD7A /* QPFoundationPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPFoundationPreferences.h; sourceTree = "<group>"; };
+		1B969C2E24DC77CC002AAD7A /* QPCrashMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPCrashMonitor.m; sourceTree = "<group>"; };
+		1B969C2F24DC77CC002AAD7A /* QPLogRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPLogRecorder.m; sourceTree = "<group>"; };
+		1B969C3024DC77CC002AAD7A /* NSObject+Dump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Dump.h"; sourceTree = "<group>"; };
+		1B969C3124DC77CC002AAD7A /* UIView+Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Tree.h"; sourceTree = "<group>"; };
+		1B969C3224DC77CC002AAD7A /* QPEnhancedDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPEnhancedDebugging.h; sourceTree = "<group>"; };
+		1B969C3324DC77CC002AAD7A /* QPCrashMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPCrashMonitor.h; sourceTree = "<group>"; };
+		1B969C3424DC77CC002AAD7A /* NSObject+Dump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Dump.m"; sourceTree = "<group>"; };
+		1B969C3524DC77CC002AAD7A /* QPLogRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPLogRecorder.h; sourceTree = "<group>"; };
+		1B969C3624DC77CC002AAD7A /* UIView+Tree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tree.m"; sourceTree = "<group>"; };
 		1BBD3A3422BB369500CD7BCD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1BBD3A3622BB369D00CD7BCD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1BBD3A3822BB36A300CD7BCD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/AppleTVOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1BE4739922BA1B96009B3792 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		1BF29CB222BA24940046611D /* QPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF29CBF22BA27C80046611D /* QPFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QPFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BF29CCA22BA2AD00046611D /* QPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BF29CD722BA2B590046611D /* QPFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QPFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BF29CE222BA2C230046611D /* QPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9D8293A82AB5DD91902D70 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ./LICENSE; sourceTree = "<group>"; };
 		B1CE04F22E359F391F4A432A /* Cartfile.private */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Cartfile.private; path = ./Cartfile.private; sourceTree = "<group>"; };
 		F2F20FEED780B2BD8CC84B66 /* QPFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QPFoundation.podspec; path = ./QPFoundation.podspec; sourceTree = "<group>"; };
@@ -101,29 +303,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BF29CC522BA2AD00046611D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BF29CD122BA2B590046611D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BBD3A3922BB36A300CD7BCD /* XCTest.framework in Frameworks */,
-				1BF29CD222BA2B590046611D /* QPFoundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BF29CDD22BA2C230046611D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -145,9 +324,6 @@
 				1B188A3122BA131700561366 /* QPFoundationTests.xctest */,
 				1BF29CB222BA24940046611D /* QPFoundation.framework */,
 				1BF29CBF22BA27C80046611D /* QPFoundationTests.xctest */,
-				1BF29CCA22BA2AD00046611D /* QPFoundation.framework */,
-				1BF29CD722BA2B590046611D /* QPFoundationTests.xctest */,
-				1BF29CE222BA2C230046611D /* QPFoundation.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,9 +358,161 @@
 		1B75143A22BBF39E006F7D56 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1B969BD224DC77CC002AAD7A /* ApplicationFramework */,
+				1B969BC924DC77CC002AAD7A /* Networking */,
+				1B969BF024DC77CC002AAD7A /* EnhancedFoundation */,
+				1B969C0724DC77CC002AAD7A /* EnhancedUI */,
+				1B969C2D24DC77CC002AAD7A /* EnhancedDebugging */,
+				1B969C2924DC77CC002AAD7A /* SupportingFiles */,
 				1B188A2B22BA131700561366 /* QPFoundation.h */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		1B969BC924DC77CC002AAD7A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1B969BCA24DC77CC002AAD7A /* QPNetworking.h */,
+				1B969BCF24DC77CC002AAD7A /* QPNetworking.m */,
+				1B969BD124DC77CC002AAD7A /* QPNetworkingDefinition.h */,
+				1B969BCD24DC77CC002AAD7A /* QPNetworkingDefinition.m */,
+				1B969BD024DC77CC002AAD7A /* QPNetworkingProtocal.h */,
+				1B969BCC24DC77CC002AAD7A /* QPNetworkingProtocal.m */,
+				1B969BCE24DC77CC002AAD7A /* QPNetworkingOperation.h */,
+				1B969BCB24DC77CC002AAD7A /* QPNetworkingOperation.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1B969BD224DC77CC002AAD7A /* ApplicationFramework */ = {
+			isa = PBXGroup;
+			children = (
+				1B969BE924DC77CC002AAD7A /* QPApplicationFramework.h */,
+				1B969BDC24DC77CC002AAD7A /* QPApplicationFramework.m */,
+				1B969BD924DC77CC002AAD7A /* QPApplicationFrameworkObject.h */,
+				1B969BEC24DC77CC002AAD7A /* UIResponder+ApplicationFramework.h */,
+				1B969BE024DC77CC002AAD7A /* UIResponder+ApplicationFramework.m */,
+				1B969BD724DC77CC002AAD7A /* QPApplicationController.h */,
+				1B969BE724DC77CC002AAD7A /* QPApplicationController.m */,
+				1B969BE424DC77CC002AAD7A /* QPFullScreenNavigationController.h */,
+				1B969BD324DC77CC002AAD7A /* QPFullScreenNavigationController.m */,
+				1B969BE224DC77CC002AAD7A /* QPNavigationController.h */,
+				1B969BD524DC77CC002AAD7A /* QPNavigationController.m */,
+				1B969BE524DC77CC002AAD7A /* QPNavigationBar.h */,
+				1B969BDA24DC77CC002AAD7A /* QPNavigationBar.m */,
+				1B969BED24DC77CC002AAD7A /* QPTabBar.h */,
+				1B969BDF24DC77CC002AAD7A /* QPTabBar.m */,
+				1B969BD424DC77CC002AAD7A /* QPTabBarController.h */,
+				1B969BE324DC77CC002AAD7A /* QPTabBarController.m */,
+				1B969BDE24DC77CC002AAD7A /* QPBaseViewController.h */,
+				1B969BEE24DC77CC002AAD7A /* QPBaseViewController.m */,
+				1B969BEF24DC77CC002AAD7A /* QPPanelController.h */,
+				1B969BDD24DC77CC002AAD7A /* QPPanelController.m */,
+				1B969BD624DC77CC002AAD7A /* QPCustomBar.h */,
+				1B969BE824DC77CC002AAD7A /* QPCustomBar.m */,
+				1B969BE624DC77CC002AAD7A /* QPToolbar.h */,
+				1B969BD824DC77CC002AAD7A /* QPToolbar.m */,
+				1B969BEA24DC77CC002AAD7A /* QPScrollPanelController.h */,
+				1B969BDB24DC77CC002AAD7A /* QPScrollPanelController.m */,
+				1B969BEB24DC77CC002AAD7A /* QPLinker.h */,
+				1B969BE124DC77CC002AAD7A /* QPLinker.m */,
+			);
+			path = ApplicationFramework;
+			sourceTree = "<group>";
+		};
+		1B969BF024DC77CC002AAD7A /* EnhancedFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				1B969C0524DC77CC002AAD7A /* QPEnhancedFoundation.h */,
+				1B969C0624DC77CC002AAD7A /* QPExchangeImplementation.h */,
+				1B969BF724DC77CC002AAD7A /* QPExchangeImplementation.m */,
+				1B969C0124DC77CC002AAD7A /* QPNonReentrantLock.h */,
+				1B969BFB24DC77CC002AAD7A /* QPSetNeedsWithBlock.h */,
+				1B969BF924DC77CC002AAD7A /* NSObject+Swizzling.h */,
+				1B969C0224DC77CC002AAD7A /* NSObject+Swizzling.m */,
+				1B969C0324DC77CC002AAD7A /* NSObject+Association.h */,
+				1B969BFA24DC77CC002AAD7A /* NSObject+Association.m */,
+				1B969BFE24DC77CC002AAD7A /* NSObject+AtDealloc.h */,
+				1B969BF324DC77CC002AAD7A /* NSObject+AtDealloc.m */,
+				1B969BF624DC77CC002AAD7A /* NSObject+BlockKeyValueObserving.h */,
+				1B969C0024DC77CC002AAD7A /* NSObject+BlockKeyValueObserving.m */,
+				1B969BFC24DC77CC002AAD7A /* NSNotificationCenter+Autoremove.h */,
+				1B969BF124DC77CC002AAD7A /* NSNotificationCenter+Autoremove.m */,
+				1B969BFD24DC77CC002AAD7A /* NSString+UsingEncoding.h */,
+				1B969BF424DC77CC002AAD7A /* NSString+UsingEncoding.m */,
+				1B969C0424DC77CC002AAD7A /* NSString+HTMLEscape.h */,
+				1B969BF824DC77CC002AAD7A /* NSString+HTMLEscape.m */,
+				1B969BF524DC77CC002AAD7A /* QPObjectPropertyListTemplate.numbers */,
+				1B969BFF24DC77CC002AAD7A /* QPObjectPropertyListSerialization.h */,
+				1B969BF224DC77CC002AAD7A /* QPObjectPropertyListSerialization.m */,
+			);
+			path = EnhancedFoundation;
+			sourceTree = "<group>";
+		};
+		1B969C0724DC77CC002AAD7A /* EnhancedUI */ = {
+			isa = PBXGroup;
+			children = (
+				1B969C1F24DC77CC002AAD7A /* QPEnhancedUI.h */,
+				1B969C1024DC77CC002AAD7A /* QPKeyboardManager.h */,
+				1B969C2124DC77CC002AAD7A /* QPKeyboardManager.m */,
+				1B969C1524DC77CC002AAD7A /* UIView+NibBasedView.h */,
+				1B969C2524DC77CC002AAD7A /* UIView+NibBasedView.m */,
+				1B969C0E24DC77CC002AAD7A /* UIColor+Conversion.h */,
+				1B969C1A24DC77CC002AAD7A /* UIColor+Conversion.m */,
+				1B969C1624DC77CC002AAD7A /* UIImage+Resizable.h */,
+				1B969C2424DC77CC002AAD7A /* UIImage+Resizable.m */,
+				1B969C2324DC77CC002AAD7A /* NSLayoutConstraint+SimpleConstraint.h */,
+				1B969C1724DC77CC002AAD7A /* NSLayoutConstraint+SimpleConstraint.m */,
+				1B969C1824DC77CC002AAD7A /* UINavigationItem+Assignment.h */,
+				1B969C0924DC77CC002AAD7A /* UINavigationItem+Assignment.m */,
+				1B969C1324DC77CC002AAD7A /* UITabBarItem+Assignment.h */,
+				1B969C2624DC77CC002AAD7A /* UITabBarItem+Assignment.m */,
+				1B969C2024DC77CC002AAD7A /* UIBarButtonItem+Factory.h */,
+				1B969C1124DC77CC002AAD7A /* UIBarButtonItem+Factory.m */,
+				1B969C2224DC77CC002AAD7A /* NSString+SizeWithFont.h */,
+				1B969C0F24DC77CC002AAD7A /* NSString+SizeWithFont.m */,
+				1B969C0B24DC77CC002AAD7A /* NSAttributedString+Size.h */,
+				1B969C1D24DC77CC002AAD7A /* NSAttributedString+Size.m */,
+				1B969C0A24DC77CC002AAD7A /* UIButton+Enlarge.h */,
+				1B969C1E24DC77CC002AAD7A /* UIButton+Enlarge.m */,
+				1B969C0824DC77CC002AAD7A /* UIButton+ImageAndTitleSpacing.h */,
+				1B969C1924DC77CC002AAD7A /* UIButton+ImageAndTitleSpacing.m */,
+				1B969C0D24DC77CC002AAD7A /* UIButton+StateBackgroundColor.h */,
+				1B969C1B24DC77CC002AAD7A /* UIButton+StateBackgroundColor.m */,
+				1B969C1424DC77CC002AAD7A /* UITextField+PlaceholderColor.h */,
+				1B969C2724DC77CC002AAD7A /* UITextField+PlaceholderColor.m */,
+				1B969C1C24DC77CC002AAD7A /* UITableView+NeedsReloadData.h */,
+				1B969C0C24DC77CC002AAD7A /* UITableView+NeedsReloadData.m */,
+				1B969C2824DC77CC002AAD7A /* UIViewController+SegueBlockPerformer.h */,
+				1B969C1224DC77CC002AAD7A /* UIViewController+SegueBlockPerformer.m */,
+			);
+			path = EnhancedUI;
+			sourceTree = "<group>";
+		};
+		1B969C2924DC77CC002AAD7A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1B969C2B24DC77CC002AAD7A /* QPPublicHeader.h */,
+				1B969C2C24DC77CC002AAD7A /* QPFoundationPreferences.h */,
+				1B969C2A24DC77CC002AAD7A /* QPFoundationPreferences.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		1B969C2D24DC77CC002AAD7A /* EnhancedDebugging */ = {
+			isa = PBXGroup;
+			children = (
+				1B969C3224DC77CC002AAD7A /* QPEnhancedDebugging.h */,
+				1B969C3024DC77CC002AAD7A /* NSObject+Dump.h */,
+				1B969C3424DC77CC002AAD7A /* NSObject+Dump.m */,
+				1B969C3124DC77CC002AAD7A /* UIView+Tree.h */,
+				1B969C3624DC77CC002AAD7A /* UIView+Tree.m */,
+				1B969C3324DC77CC002AAD7A /* QPCrashMonitor.h */,
+				1B969C2E24DC77CC002AAD7A /* QPCrashMonitor.m */,
+				1B969C3524DC77CC002AAD7A /* QPLogRecorder.h */,
+				1B969C2F24DC77CC002AAD7A /* QPLogRecorder.m */,
+			);
+			path = EnhancedDebugging;
 			sourceTree = "<group>";
 		};
 		1BBD3A3322BB369500CD7BCD /* Frameworks */ = {
@@ -215,7 +543,62 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B969C9524DC77CD002AAD7A /* QPFoundationPreferences.h in Headers */,
+				1B969C4324DC77CC002AAD7A /* QPApplicationController.h in Headers */,
+				1B969C8924DC77CD002AAD7A /* QPEnhancedUI.h in Headers */,
+				1B969C8C24DC77CD002AAD7A /* NSString+SizeWithFont.h in Headers */,
+				1B969C7424DC77CD002AAD7A /* UIButton+Enlarge.h in Headers */,
+				1B969C6824DC77CD002AAD7A /* NSString+UsingEncoding.h in Headers */,
+				1B969C8224DC77CD002AAD7A /* UINavigationItem+Assignment.h in Headers */,
+				1B969C4A24DC77CC002AAD7A /* QPBaseViewController.h in Headers */,
+				1B969C4224DC77CC002AAD7A /* QPCustomBar.h in Headers */,
+				1B969C6924DC77CD002AAD7A /* NSObject+AtDealloc.h in Headers */,
+				1B969C8D24DC77CD002AAD7A /* NSLayoutConstraint+SimpleConstraint.h in Headers */,
+				1B969C7D24DC77CD002AAD7A /* UITabBarItem+Assignment.h in Headers */,
+				1B969C7524DC77CD002AAD7A /* NSAttributedString+Size.h in Headers */,
+				1B969C5624DC77CC002AAD7A /* QPScrollPanelController.h in Headers */,
+				1B969C7824DC77CD002AAD7A /* UIColor+Conversion.h in Headers */,
+				1B969C6F24DC77CD002AAD7A /* NSString+HTMLEscape.h in Headers */,
+				1B969C5224DC77CC002AAD7A /* QPToolbar.h in Headers */,
 				1B188A3922BA131700561366 /* QPFoundation.h in Headers */,
+				1B969C9824DC77CD002AAD7A /* NSObject+Dump.h in Headers */,
+				1B969C6724DC77CD002AAD7A /* NSNotificationCenter+Autoremove.h in Headers */,
+				1B969C6424DC77CD002AAD7A /* NSObject+Swizzling.h in Headers */,
+				1B969C5B24DC77CC002AAD7A /* QPPanelController.h in Headers */,
+				1B969C6A24DC77CD002AAD7A /* QPObjectPropertyListSerialization.h in Headers */,
+				1B969C6124DC77CD002AAD7A /* NSObject+BlockKeyValueObserving.h in Headers */,
+				1B969C5024DC77CC002AAD7A /* QPFullScreenNavigationController.h in Headers */,
+				1B969C5524DC77CC002AAD7A /* QPApplicationFramework.h in Headers */,
+				1B969C8A24DC77CD002AAD7A /* UIBarButtonItem+Factory.h in Headers */,
+				1B969C3D24DC77CC002AAD7A /* QPNetworkingProtocal.h in Headers */,
+				1B969C5824DC77CC002AAD7A /* UIResponder+ApplicationFramework.h in Headers */,
+				1B969C6624DC77CD002AAD7A /* QPSetNeedsWithBlock.h in Headers */,
+				1B969C9224DC77CD002AAD7A /* UIViewController+SegueBlockPerformer.h in Headers */,
+				1B969C7A24DC77CD002AAD7A /* QPKeyboardManager.h in Headers */,
+				1B969C7E24DC77CD002AAD7A /* UITextField+PlaceholderColor.h in Headers */,
+				1B969C7224DC77CD002AAD7A /* UIButton+ImageAndTitleSpacing.h in Headers */,
+				1B969C8624DC77CD002AAD7A /* UITableView+NeedsReloadData.h in Headers */,
+				1B969C7724DC77CD002AAD7A /* UIButton+StateBackgroundColor.h in Headers */,
+				1B969C9A24DC77CD002AAD7A /* QPEnhancedDebugging.h in Headers */,
+				1B969C4E24DC77CC002AAD7A /* QPNavigationController.h in Headers */,
+				1B969C3B24DC77CC002AAD7A /* QPNetworkingOperation.h in Headers */,
+				1B969C3724DC77CC002AAD7A /* QPNetworking.h in Headers */,
+				1B969C6E24DC77CD002AAD7A /* NSObject+Association.h in Headers */,
+				1B969C5724DC77CC002AAD7A /* QPLinker.h in Headers */,
+				1B969C6C24DC77CD002AAD7A /* QPNonReentrantLock.h in Headers */,
+				1B969C5124DC77CC002AAD7A /* QPNavigationBar.h in Headers */,
+				1B969C7124DC77CD002AAD7A /* QPExchangeImplementation.h in Headers */,
+				1B969C5924DC77CC002AAD7A /* QPTabBar.h in Headers */,
+				1B969C9D24DC77CD002AAD7A /* QPLogRecorder.h in Headers */,
+				1B969C3E24DC77CC002AAD7A /* QPNetworkingDefinition.h in Headers */,
+				1B969C9924DC77CD002AAD7A /* UIView+Tree.h in Headers */,
+				1B969C4524DC77CC002AAD7A /* QPApplicationFrameworkObject.h in Headers */,
+				1B969C9424DC77CD002AAD7A /* QPPublicHeader.h in Headers */,
+				1B969C9B24DC77CD002AAD7A /* QPCrashMonitor.h in Headers */,
+				1B969C4024DC77CC002AAD7A /* QPTabBarController.h in Headers */,
+				1B969C7024DC77CD002AAD7A /* QPEnhancedFoundation.h in Headers */,
+				1B969C8024DC77CD002AAD7A /* UIImage+Resizable.h in Headers */,
+				1B969C7F24DC77CD002AAD7A /* UIView+NibBasedView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,23 +606,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B969CA224DC7C2E002AAD7A /* QPNetworkingOperation.h in Headers */,
+				1B969CA324DC7C39002AAD7A /* QPPublicHeader.h in Headers */,
 				1BF29CAB22BA24940046611D /* QPFoundation.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BF29CC222BA2AD00046611D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BF29CC322BA2AD00046611D /* QPFoundation.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BF29CDA22BA2C230046611D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BF29CDB22BA2C230046611D /* QPFoundation.h in Headers */,
+				1B969CA124DC7C2C002AAD7A /* QPNetworkingProtocal.h in Headers */,
+				1B969C9F24DC7C26002AAD7A /* QPNetworking.h in Headers */,
+				1B969CA024DC7C29002AAD7A /* QPNetworkingDefinition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,60 +690,6 @@
 			productReference = 1BF29CBF22BA27C80046611D /* QPFoundationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1BF29CC122BA2AD00046611D /* QPFoundation-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1BF29CC722BA2AD00046611D /* Build configuration list for PBXNativeTarget "QPFoundation-tvOS" */;
-			buildPhases = (
-				1BF29CC222BA2AD00046611D /* Headers */,
-				1BF29CC422BA2AD00046611D /* Sources */,
-				1BF29CC522BA2AD00046611D /* Frameworks */,
-				1BF29CC622BA2AD00046611D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "QPFoundation-tvOS";
-			productName = QPFoundation;
-			productReference = 1BF29CCA22BA2AD00046611D /* QPFoundation.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		1BF29CCC22BA2B590046611D /* QPFoundationTests-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1BF29CD422BA2B590046611D /* Build configuration list for PBXNativeTarget "QPFoundationTests-tvOS" */;
-			buildPhases = (
-				1BF29CCF22BA2B590046611D /* Sources */,
-				1BF29CD122BA2B590046611D /* Frameworks */,
-				1BF29CD322BA2B590046611D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1BBD3A4322BB611A00CD7BCD /* PBXTargetDependency */,
-			);
-			name = "QPFoundationTests-tvOS";
-			productName = QPFoundationTests;
-			productReference = 1BF29CD722BA2B590046611D /* QPFoundationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1BF29CD922BA2C230046611D /* QPFoundation-watchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1BF29CDF22BA2C230046611D /* Build configuration list for PBXNativeTarget "QPFoundation-watchOS" */;
-			buildPhases = (
-				1BF29CDA22BA2C230046611D /* Headers */,
-				1BF29CDC22BA2C230046611D /* Sources */,
-				1BF29CDD22BA2C230046611D /* Frameworks */,
-				1BF29CDE22BA2C230046611D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "QPFoundation-watchOS";
-			productName = QPFoundation;
-			productReference = 1BF29CE222BA2C230046611D /* QPFoundation.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -407,9 +725,6 @@
 				1B188A3022BA131700561366 /* QPFoundationTests-iOS */,
 				1BF29CA922BA24940046611D /* QPFoundation-macOS */,
 				1BF29CB422BA27C80046611D /* QPFoundationTests-macOS */,
-				1BF29CC122BA2AD00046611D /* QPFoundation-tvOS */,
-				1BF29CCC22BA2B590046611D /* QPFoundationTests-tvOS */,
-				1BF29CD922BA2C230046611D /* QPFoundation-watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -419,6 +734,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B969C6024DC77CC002AAD7A /* QPObjectPropertyListTemplate.numbers in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,27 +759,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BF29CC622BA2AD00046611D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BF29CD322BA2B590046611D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BF29CDE22BA2C230046611D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -471,6 +766,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B969C9324DC77CD002AAD7A /* QPFoundationPreferences.m in Sources */,
+				1B969C8424DC77CD002AAD7A /* UIColor+Conversion.m in Sources */,
+				1B969C4F24DC77CC002AAD7A /* QPTabBarController.m in Sources */,
+				1B969C4424DC77CC002AAD7A /* QPToolbar.m in Sources */,
+				1B969C4124DC77CC002AAD7A /* QPNavigationController.m in Sources */,
+				1B969C9124DC77CD002AAD7A /* UITextField+PlaceholderColor.m in Sources */,
+				1B969C8124DC77CD002AAD7A /* NSLayoutConstraint+SimpleConstraint.m in Sources */,
+				1B969C4624DC77CC002AAD7A /* QPNavigationBar.m in Sources */,
+				1B969C5C24DC77CC002AAD7A /* NSNotificationCenter+Autoremove.m in Sources */,
+				1B969C8724DC77CD002AAD7A /* NSAttributedString+Size.m in Sources */,
+				1B969C7624DC77CD002AAD7A /* UITableView+NeedsReloadData.m in Sources */,
+				1B969C5F24DC77CC002AAD7A /* NSString+UsingEncoding.m in Sources */,
+				1B969C9E24DC77CD002AAD7A /* UIView+Tree.m in Sources */,
+				1B969C8324DC77CD002AAD7A /* UIButton+ImageAndTitleSpacing.m in Sources */,
+				1B969C8E24DC77CD002AAD7A /* UIImage+Resizable.m in Sources */,
+				1B969C7924DC77CD002AAD7A /* NSString+SizeWithFont.m in Sources */,
+				1B969C6524DC77CD002AAD7A /* NSObject+Association.m in Sources */,
+				1B969C8F24DC77CD002AAD7A /* UIView+NibBasedView.m in Sources */,
+				1B969C4D24DC77CC002AAD7A /* QPLinker.m in Sources */,
+				1B969C3A24DC77CC002AAD7A /* QPNetworkingDefinition.m in Sources */,
+				1B969C7324DC77CD002AAD7A /* UINavigationItem+Assignment.m in Sources */,
+				1B969C8824DC77CD002AAD7A /* UIButton+Enlarge.m in Sources */,
+				1B969C9724DC77CD002AAD7A /* QPLogRecorder.m in Sources */,
+				1B969C3F24DC77CC002AAD7A /* QPFullScreenNavigationController.m in Sources */,
+				1B969C6324DC77CD002AAD7A /* NSString+HTMLEscape.m in Sources */,
+				1B969C4724DC77CC002AAD7A /* QPScrollPanelController.m in Sources */,
+				1B969C5E24DC77CC002AAD7A /* NSObject+AtDealloc.m in Sources */,
+				1B969C8524DC77CD002AAD7A /* UIButton+StateBackgroundColor.m in Sources */,
+				1B969C9C24DC77CD002AAD7A /* NSObject+Dump.m in Sources */,
+				1B969C7B24DC77CD002AAD7A /* UIBarButtonItem+Factory.m in Sources */,
+				1B969C5A24DC77CC002AAD7A /* QPBaseViewController.m in Sources */,
+				1B969C4B24DC77CC002AAD7A /* QPTabBar.m in Sources */,
+				1B969C4824DC77CC002AAD7A /* QPApplicationFramework.m in Sources */,
+				1B969C3924DC77CC002AAD7A /* QPNetworkingProtocal.m in Sources */,
+				1B969C8B24DC77CD002AAD7A /* QPKeyboardManager.m in Sources */,
+				1B969C5D24DC77CC002AAD7A /* QPObjectPropertyListSerialization.m in Sources */,
+				1B969C4924DC77CC002AAD7A /* QPPanelController.m in Sources */,
+				1B969C4C24DC77CC002AAD7A /* UIResponder+ApplicationFramework.m in Sources */,
+				1B969C9624DC77CD002AAD7A /* QPCrashMonitor.m in Sources */,
+				1B969C9024DC77CD002AAD7A /* UITabBarItem+Assignment.m in Sources */,
+				1B969C6224DC77CD002AAD7A /* QPExchangeImplementation.m in Sources */,
+				1B969C5324DC77CC002AAD7A /* QPApplicationController.m in Sources */,
+				1B969C3C24DC77CC002AAD7A /* QPNetworking.m in Sources */,
+				1B969C6B24DC77CD002AAD7A /* NSObject+BlockKeyValueObserving.m in Sources */,
+				1B969C3824DC77CC002AAD7A /* QPNetworkingOperation.m in Sources */,
+				1B969C6D24DC77CD002AAD7A /* NSObject+Swizzling.m in Sources */,
+				1B969C5424DC77CC002AAD7A /* QPCustomBar.m in Sources */,
+				1B969C7C24DC77CD002AAD7A /* UIViewController+SegueBlockPerformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +829,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B969CA724DC7C64002AAD7A /* QPNetworkingOperation.m in Sources */,
+				1B969CA624DC7C61002AAD7A /* QPNetworkingProtocal.m in Sources */,
+				1B969CA424DC7C5B002AAD7A /* QPNetworking.m in Sources */,
+				1B969CA524DC7C5F002AAD7A /* QPNetworkingDefinition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,28 +841,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BF29CB822BA27C80046611D /* Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BF29CC422BA2AD00046611D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BF29CCF22BA2B590046611D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BF29CD022BA2B590046611D /* Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1BF29CDC22BA2C230046611D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,11 +856,6 @@
 			isa = PBXTargetDependency;
 			target = 1BF29CA922BA24940046611D /* QPFoundation-macOS */;
 			targetProxy = 1BBD3A4022BB611100CD7BCD /* PBXContainerItemProxy */;
-		};
-		1BBD3A4322BB611A00CD7BCD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1BF29CC122BA2AD00046611D /* QPFoundation-tvOS */;
-			targetProxy = 1BBD3A4222BB611A00CD7BCD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -824,130 +1144,6 @@
 			};
 			name = Release;
 		};
-		1BF29CC822BA2AD00046611D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = QPFoundation/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.keqiongpan.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = QPFoundation;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		1BF29CC922BA2AD00046611D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = QPFoundation/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.keqiongpan.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = QPFoundation;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		1BF29CD522BA2B590046611D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = QPFoundationTests/Prefix.pch;
-				INFOPLIST_FILE = QPFoundationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.keqiongpan.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = QPFoundationTests;
-				SDKROOT = appletvos;
-			};
-			name = Debug;
-		};
-		1BF29CD622BA2B590046611D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = QPFoundationTests/Prefix.pch;
-				INFOPLIST_FILE = QPFoundationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.keqiongpan.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = QPFoundationTests;
-				SDKROOT = appletvos;
-			};
-			name = Release;
-		};
-		1BF29CE022BA2C230046611D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = QPFoundation/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.keqiongpan.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = QPFoundation;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		1BF29CE122BA2C230046611D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = QPFoundation/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.keqiongpan.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = QPFoundation;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -992,33 +1188,6 @@
 			buildConfigurations = (
 				1BF29CBD22BA27C80046611D /* Debug */,
 				1BF29CBE22BA27C80046611D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1BF29CC722BA2AD00046611D /* Build configuration list for PBXNativeTarget "QPFoundation-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1BF29CC822BA2AD00046611D /* Debug */,
-				1BF29CC922BA2AD00046611D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1BF29CD422BA2B590046611D /* Build configuration list for PBXNativeTarget "QPFoundationTests-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1BF29CD522BA2B590046611D /* Debug */,
-				1BF29CD622BA2B590046611D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1BF29CDF22BA2C230046611D /* Build configuration list for PBXNativeTarget "QPFoundation-watchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1BF29CE022BA2C230046611D /* Debug */,
-				1BF29CE122BA2C230046611D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
