@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "DEMOProtocolInvokes.h"
 
 @interface HomeViewController ()
 
@@ -82,7 +83,19 @@
 
 - (void)onInvokeButtonClick
 {
-    // insert code here...
+    SVCQueryUserInformation(^(DEMO_QueryUserInformation_REQ_body *request) {
+        request.userid = @"admin";
+    }, ^(DEMO_QueryUserInformation_RSP_body *response) {
+        for (QPNetworkingType(response.users) user in response.users) {
+            NSLog(@"user.userid = %@", user.userid);
+            NSLog(@"user.name = %@", user.name);
+            NSLog(@"user.age = %@", user.age);
+            NSLog(@"user.sex = %@", user.sex);
+            NSLog(@"user.birthday = %@", user.birthday);
+            NSLog(@"user.register_date = %@", user.register_date);
+            NSLog(@"user.remark = %@", user.remark);
+        }
+    }, nil);
 }
 
 @end
