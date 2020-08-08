@@ -16,9 +16,10 @@
 
 - (void)initializePreferences
 {
-    QPFoundationIsEnablePageNavigationController = YES;
+    QPFoundationIsEnablePageNavigationController = NO;
     QPFoundationIsEnableTabBarController = YES;
-    QPFoundationIsEnableTabBarControllerSwitchNavigationItem = YES;
+    QPFoundationIsEnableTabBarControllerSwitchNavigationItem = NO;
+    QPFoundationIsEnableNavigationControllerPerTabBarItem = YES;
     QPFoundationIsPrepushingFrameworkController = YES;
 
     QPFoundationNavigationBarBackgroundColor = 0x2196f3;

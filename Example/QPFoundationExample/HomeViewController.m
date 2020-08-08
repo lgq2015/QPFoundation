@@ -91,7 +91,8 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
 
-    [QPGetPageNavigationController() pushViewController:webViewController animated:YES];
+    [webViewController setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:webViewController animated:YES];
 }
 
 - (void)onInvokeButtonClick
