@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QPFoundation'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Provides a general and convenient framework for building App, including UI, enhancement tool classes, network interface, debugging, etc.'
 
 # This description is used to generate tags and improve search results.
