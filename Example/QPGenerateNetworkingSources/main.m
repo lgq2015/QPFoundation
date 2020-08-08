@@ -7,10 +7,34 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <QPFoundation/QPFoundation.h>
 
-int main(int argc, const char * argv[]) {
+
+void QPNetworkingExceptionHandler(NSException *exception)
+{
+    NSString *exceptionDescription =
+    [NSString stringWithFormat:
+     @"================================================================\n"
+     @"Exception Name: %@\n"
+     @"Exception Reason: %@\n"
+     @"User Info: %@\n"
+     @"================================================================\n",
+     [exception name],
+     [exception reason],
+     [exception userInfo]];
+    fprintf(stderr, "%s", [exceptionDescription UTF8String]);
+    exit(EXIT_FAILURE);
+}
+
+int main(int argc, const char * argv[])
+{
     @autoreleasepool {
-        // insert code here...
+        NSSetUncaughtExceptionHandler(&QPNetworkingExceptionHandler);
+        NSArray *protocols = [QPNetworkingGetRegisteredProtocols() allValues];
+        for (QPNetworkingProtocol *protocol in protocols) {
+            [protocol make];
+            [protocol stub];
+        }
     }
     return 0;
 }

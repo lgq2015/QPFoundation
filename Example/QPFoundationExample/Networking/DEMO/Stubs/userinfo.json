@@ -1,0 +1,22 @@
+{
+  "response" : {
+    "users" : [
+      {
+        "userid" : "用户编号",
+        "remark" : "备注",
+        "register_date" : "注册日期",
+        "age" : "年龄",
+        "birthday" : "生日日期",
+        "sex" : "性别",
+        "name" : "姓名"
+      }
+    ]
+  },
+  "header" : {
+    "totalcount" : "131",
+    "rspcode" : "0",
+    "factcount" : "10",
+    "serialno" : "90016042810214060002",
+    "rspdesc" : "Success"
+  }
+}

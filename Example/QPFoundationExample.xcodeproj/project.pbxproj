@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B8AE7B624DD24370055351B /* BASEProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE7B524DD24370055351B /* BASEProtocol.m */; };
+		1B8AE7B724DD24370055351B /* BASEProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE7B524DD24370055351B /* BASEProtocol.m */; };
+		1B8AE7BB24DD26380055351B /* DEMOProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE7BA24DD26380055351B /* DEMOProtocol.m */; };
+		1B8AE7BC24DD26380055351B /* DEMOProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE7BA24DD26380055351B /* DEMOProtocol.m */; };
+		1B8AE7C524DD30E30055351B /* DEMOProtocolInvokes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE7C224DD30E20055351B /* DEMOProtocolInvokes.m */; };
+		1B8AE7C824DD30E30055351B /* DEMOProtocolClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE7C424DD30E20055351B /* DEMOProtocolClasses.m */; };
+		1B8AE7CC24DD31C50055351B /* DEMOProtocol+Definition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE7CB24DD31C50055351B /* DEMOProtocol+Definition.m */; };
+		1B8AE7CD24DD31C50055351B /* DEMOProtocol+Definition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE7CB24DD31C50055351B /* DEMOProtocol+Definition.m */; };
+		1B8AE7D024DD31E20055351B /* DEMOProtocol+Callback.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE7CF24DD31E20055351B /* DEMOProtocol+Callback.m */; };
+		1B8AE7D324DD32070055351B /* DEMOOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8AE7D224DD32070055351B /* DEMOOperation.m */; };
+		1B8AE7D724DD481D0055351B /* userinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B8AE7D624DD481D0055351B /* userinfo.json */; };
+		1B8AE7DA24DD4A000055351B /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B8AE7D824DD4A000055351B /* login.json */; };
+		1B8AE7DB24DD4A000055351B /* logout.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B8AE7D924DD4A000055351B /* logout.json */; };
+		1B8AE7DE24DE35EF0055351B /* DEMOProtocolSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B8AE7C324DD30E20055351B /* DEMOProtocolSummary.html */; };
 		1BE9BD0D24DCFC06001D934E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE9BD0C24DCFC06001D934E /* HomeViewController.m */; };
 		1BE9BD1024DCFC1E001D934E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE9BD0F24DCFC1E001D934E /* DetailViewController.m */; };
 		1BE9DECD24DC9D6000299A3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE9DECC24DC9D6000299A3D /* main.m */; };
@@ -35,6 +49,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B8AE7B424DD24370055351B /* BASEProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BASEProtocol.h; sourceTree = "<group>"; };
+		1B8AE7B524DD24370055351B /* BASEProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BASEProtocol.m; sourceTree = "<group>"; };
+		1B8AE7B924DD26380055351B /* DEMOProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEMOProtocol.h; sourceTree = "<group>"; };
+		1B8AE7BA24DD26380055351B /* DEMOProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEMOProtocol.m; sourceTree = "<group>"; };
+		1B8AE7C024DD30E20055351B /* DEMOProtocolClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOProtocolClasses.h; sourceTree = "<group>"; };
+		1B8AE7C124DD30E20055351B /* DEMOProtocolInvokes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOProtocolInvokes.h; sourceTree = "<group>"; };
+		1B8AE7C224DD30E20055351B /* DEMOProtocolInvokes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOProtocolInvokes.m; sourceTree = "<group>"; };
+		1B8AE7C324DD30E20055351B /* DEMOProtocolSummary.html */ = {isa = PBXFileReference; explicitFileType = archive.war; fileEncoding = 4; path = DEMOProtocolSummary.html; sourceTree = "<group>"; };
+		1B8AE7C424DD30E20055351B /* DEMOProtocolClasses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOProtocolClasses.m; sourceTree = "<group>"; };
+		1B8AE7CA24DD31C50055351B /* DEMOProtocol+Definition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DEMOProtocol+Definition.h"; sourceTree = "<group>"; };
+		1B8AE7CB24DD31C50055351B /* DEMOProtocol+Definition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DEMOProtocol+Definition.m"; sourceTree = "<group>"; };
+		1B8AE7CE24DD31E20055351B /* DEMOProtocol+Callback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DEMOProtocol+Callback.h"; sourceTree = "<group>"; };
+		1B8AE7CF24DD31E20055351B /* DEMOProtocol+Callback.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DEMOProtocol+Callback.m"; sourceTree = "<group>"; };
+		1B8AE7D124DD32070055351B /* DEMOOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEMOOperation.h; sourceTree = "<group>"; };
+		1B8AE7D224DD32070055351B /* DEMOOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEMOOperation.m; sourceTree = "<group>"; };
+		1B8AE7D624DD481D0055351B /* userinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userinfo.json; sourceTree = "<group>"; };
+		1B8AE7D824DD4A000055351B /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
+		1B8AE7D924DD4A000055351B /* logout.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = logout.json; sourceTree = "<group>"; };
 		1BE9BD0B24DCFC06001D934E /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		1BE9BD0C24DCFC06001D934E /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		1BE9BD0E24DCFC1E001D934E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -95,6 +127,71 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		1B8AE7B224DD22F90055351B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1B8AE7B324DD23410055351B /* BASE */,
+				1B8AE7B824DD25F30055351B /* DEMO */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1B8AE7B324DD23410055351B /* BASE */ = {
+			isa = PBXGroup;
+			children = (
+				1B8AE7B424DD24370055351B /* BASEProtocol.h */,
+				1B8AE7B524DD24370055351B /* BASEProtocol.m */,
+			);
+			path = BASE;
+			sourceTree = "<group>";
+		};
+		1B8AE7B824DD25F30055351B /* DEMO */ = {
+			isa = PBXGroup;
+			children = (
+				1B8AE7BD24DD2F280055351B /* Core */,
+				1B8AE7BE24DD2F2F0055351B /* Dynamic */,
+				1B8AE7BF24DD2F370055351B /* Stubs */,
+			);
+			path = DEMO;
+			sourceTree = "<group>";
+		};
+		1B8AE7BD24DD2F280055351B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1B8AE7B924DD26380055351B /* DEMOProtocol.h */,
+				1B8AE7BA24DD26380055351B /* DEMOProtocol.m */,
+				1B8AE7CA24DD31C50055351B /* DEMOProtocol+Definition.h */,
+				1B8AE7CB24DD31C50055351B /* DEMOProtocol+Definition.m */,
+				1B8AE7CE24DD31E20055351B /* DEMOProtocol+Callback.h */,
+				1B8AE7CF24DD31E20055351B /* DEMOProtocol+Callback.m */,
+				1B8AE7D124DD32070055351B /* DEMOOperation.h */,
+				1B8AE7D224DD32070055351B /* DEMOOperation.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1B8AE7BE24DD2F2F0055351B /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				1B8AE7C324DD30E20055351B /* DEMOProtocolSummary.html */,
+				1B8AE7C024DD30E20055351B /* DEMOProtocolClasses.h */,
+				1B8AE7C424DD30E20055351B /* DEMOProtocolClasses.m */,
+				1B8AE7C124DD30E20055351B /* DEMOProtocolInvokes.h */,
+				1B8AE7C224DD30E20055351B /* DEMOProtocolInvokes.m */,
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		1B8AE7BF24DD2F370055351B /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				1B8AE7D624DD481D0055351B /* userinfo.json */,
+				1B8AE7D824DD4A000055351B /* login.json */,
+				1B8AE7D924DD4A000055351B /* logout.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		1BE9DECB24DC9D6000299A3D /* QPGenerateNetworkingSources */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +235,7 @@
 		6003F593195388D20070C39A /* QPFoundationExample */ = {
 			isa = PBXGroup;
 			children = (
+				1B8AE7B224DD22F90055351B /* Networking */,
 				6003F59C195388D20070C39A /* AppDelegate.h */,
 				6003F59D195388D20070C39A /* AppDelegate.m */,
 				1BE9BD0B24DCFC06001D934E /* HomeViewController.h */,
@@ -243,7 +341,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8AE7DE24DE35EF0055351B /* DEMOProtocolSummary.html in Resources */,
+				1B8AE7D724DD481D0055351B /* userinfo.json in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				1B8AE7DA24DD4A000055351B /* login.json in Resources */,
+				1B8AE7DB24DD4A000055351B /* logout.json in Resources */,
 				6003F5A9195388D20070C39A /* Assets.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -342,7 +444,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8AE7B724DD24370055351B /* BASEProtocol.m in Sources */,
+				1B8AE7BC24DD26380055351B /* DEMOProtocol.m in Sources */,
 				1BE9DECD24DC9D6000299A3D /* main.m in Sources */,
+				1B8AE7CD24DD31C50055351B /* DEMOProtocol+Definition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,8 +457,15 @@
 			files = (
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				1B8AE7D324DD32070055351B /* DEMOOperation.m in Sources */,
+				1B8AE7CC24DD31C50055351B /* DEMOProtocol+Definition.m in Sources */,
+				1B8AE7B624DD24370055351B /* BASEProtocol.m in Sources */,
 				1BE9BD0D24DCFC06001D934E /* HomeViewController.m in Sources */,
+				1B8AE7D024DD31E20055351B /* DEMOProtocol+Callback.m in Sources */,
+				1B8AE7BB24DD26380055351B /* DEMOProtocol.m in Sources */,
+				1B8AE7C824DD30E30055351B /* DEMOProtocolClasses.m in Sources */,
 				1BE9BD1024DCFC1E001D934E /* DetailViewController.m in Sources */,
+				1B8AE7C524DD30E30055351B /* DEMOProtocolInvokes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
