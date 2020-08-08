@@ -76,9 +76,22 @@
 
 - (void)onPopupButtonClick
 {
-    QPPanelController *blank = [[QPPanelController alloc] init];
-    blank.title = @"Blank";
-    [QPGetPageNavigationController() pushViewController:blank animated:YES];
+    QPPanelController *webViewController = [[QPPanelController alloc] init];
+    [webViewController setTitle:@"DEMO"];
+    [webViewController view];
+
+    UIWebView *webView = [[UIWebView alloc] init];
+    [webView setScalesPageToFit:YES];
+    [webViewController.contentView addSubview:webView];
+    [webView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(webView.superview);
+    }];
+
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"DEMOProtocolSummary" withExtension:@"html"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
+
+    [QPGetPageNavigationController() pushViewController:webViewController animated:YES];
 }
 
 - (void)onInvokeButtonClick

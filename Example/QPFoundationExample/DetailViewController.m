@@ -30,7 +30,35 @@
 {
     [super viewDidLoad];
 
-    // insert code here...
+    // 顶部栏
+
+    QPCustomBar *topCustomBar = [[QPCustomBar alloc] init];
+    [topCustomBar setBackgroundColor:[UIColor colorWithRGB:0xccffcc]];
+    [self addTopCustomBar:topCustomBar];
+
+    UILabel *topLabel = [[UILabel alloc] init];
+    [topLabel setText:@"That's a QPCustomBar."];
+    [topLabel setTextAlignment:NSTextAlignmentCenter];
+
+    [topCustomBar addSubview:topLabel];
+    [topLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(topCustomBar);
+    }];
+
+    // 底部栏
+
+    QPCustomBar *bottomCustomBar = [[QPCustomBar alloc] init];
+    [bottomCustomBar setBackgroundColor:[UIColor colorWithRGB:0xccffcc]];
+    [self addBottomCustomBar:bottomCustomBar];
+
+    UILabel *bottomLabel = [[UILabel alloc] init];
+    [bottomLabel setText:@"That's another QPCustomBar."];
+    [bottomLabel setTextAlignment:NSTextAlignmentCenter];
+
+    [bottomCustomBar addSubview:bottomLabel];
+    [bottomLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(bottomCustomBar);
+    }];
 }
 
 - (void)refreshAppearance
